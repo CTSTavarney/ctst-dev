@@ -124,6 +124,7 @@ This Excel workbook uses as its data source the CSV file, `points_combined.csv`,
 To (re-)generate the Excel data tables for the database in the Excel workbook, update the Data Source, then re-run the Power Query queries:
 
 - Open the file, `create_db_tables.xlsx` in Excel
+- If the message `SECURITY WARNING External Data Connections have been disabled` appears, click `Enable Content`
 - Navigate to `Data > Get Data v > Data Source Settings...`
 - Click `OK` to trust the source of the file
 - In the Data source settings dialog, click on the entry for the `points_combined.csv` file

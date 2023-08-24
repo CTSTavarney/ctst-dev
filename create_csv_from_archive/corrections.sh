@@ -241,3 +241,7 @@ replace \
 replace \
 'L;Sanders, Larry;362;2019-10-17;Paradise Festival;Orange Co, CA;Masters;4;0' \
 'F;Sandoval, Lisa;583;2019-10-17;Paradise Festival;Orange Co, CA;Masters;4;0'
+
+replace \
+'F;Lancelona, Sheila;392;2013-04-04;MidAtlantic Classic;Herndon, VA;Intermediate;4;2' \
+'F;Lancelotta, Sheila;392;2013-04-04;MidAtlantic Classic;Herndon, VA;Intermediate;4;2'

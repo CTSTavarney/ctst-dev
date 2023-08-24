@@ -40,6 +40,8 @@ In the `create_db_tables` directory is an Excel workbook that uses [Power Query]
 `corrections.sh` script (sourced from `convert_txt_to_csv.sh`):
 
 ```
+2013 MidAtlantic Intermediate 4th Place Follower. Change Sheila Lancelona to Sheila Lancelotta
+
 2013 Colorado Novice 1st Place Follower. Add Nicole Szule (752) with 10 Points
 
 2013 Albuquerque Novice 9th Place Leader. Move Paul Stepenaski (312) from 8th Place to 9th Place with 0 Points
