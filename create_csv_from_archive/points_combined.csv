@@ -376,8 +376,8 @@ L,"Devereux, Thomas",1111,2018-10-18,"Paradise Festival","Orange Co, CA",Novice,
 L,"Devereux, Thomas",1111,2019-07-04,"Colorado Country Classic","Denver, CO",Novice,2,4
 L,"Devereux, Thomas",1111,2019-05-23,"FreZno Dance Classic","Fresno, CA",Novice,3,6
 L,"Devereux, Thomas",1111,2019-07-11,"Portland Dance Festival","Portland, OR",Novice,2,4
-L,"Deverux, Thomas",1200,2018-07-12,"Portland Dance Festival","Portland, OR",Novice,2,0
-L,"Deverux, Thomas",1200,2018-07-12,"Portland Dance Festival","Portland, OR",Novice,3,0
+L,"Devereux, Thomas",1111,2018-07-12,"Portland Dance Festival","Portland, OR",Novice,2,0
+L,"Devereux, Thomas",1111,2018-07-12,"Portland Dance Festival","Portland, OR",Novice,3,0
 L,"Dill, Rob",571,2014-05-15,"Texas Classic","Houston, TX",Novice,6,0
 L,"Dillon, Jack",783,2015-04-24,"Louisiana Hayride","Alexandria, LA",Novice,5,1
 L,"Douglas, Jake",604,2017-03-10,"High Desert Classic","Lancaster, CA",Intermediate,5,1
@@ -1567,7 +1567,7 @@ L,"Tschirhart, Joe",240,2013-07-11,"Portland Dance Festival","Portland, OR",Adva
 L,"Tschirhart, Joe",240,2014-10-16,"Paradise Festival","Ontario, CA",Advanced,5,1
 L,"Tschirhart, Joe",240,2015-06-25,"Colorado Country Classic","Denver, CO",Advanced,5,1
 L,"Tschirhart, Joe",240,2016-06-23,"Colorado Country Classic","Denver, CO",Advanced,5,1
-L,"Turner, P.J.",541,2014-01-01,"UCWDC World's","Nashville, TN",Advanced,3,3
+L,"Turner, PJ",1319,2014-01-01,"UCWDC World's","Nashville, TN",Advanced,3,3
 L,"Turner, PJ",1319,2020-01-05,"UCWDC World's","Nashville, TN",Advanced,1,5
 L,"Upp, Dave",979,2016-06-30,"Indy Dance Explosion","Indianapolis, IN",Novice,5,1
 L,"Valenzuela, Brian",216,2012-09-27,"New Mexico Fiesta","Albuquerque, NM",Novice,3,3
@@ -1649,11 +1649,11 @@ L,"Whitely, Nolan",1116,2017-08-11,"Lone Star Invitational","Austin, TX",Novice,
 L,"Whitely, Nolan",1116,2017-10-13,"Waltz Across Texas","Houston, TX",Novice,1,5
 L,"Whitely, Nolan",1116,2018-01-01,"UCWDC World's","San Francisco, CA",Novice,1,5
 L,"Wiesner, Brady",1243,2019-04-11,"Calgary Dance Stampede","Calgary, AB",Novice,8,0
-F,"Williams, Cheryl",825,2016-10-20,"Paradise Festival","Ontario, CA",Masters,1,0
-F,"Williams, Cheryl",825,2017-10-19,"Paradise Festival","Orange Co, CA",Masters,5,0
-F,"Williams, Cheryl",825,2019-07-11,"Portland Dance Festival","Portland, OR",Masters,1,0
-F,"Williams, Cheryl",825,2017-04-13,"San Diego Festival","San Diego, CA",Advanced,2,4
-F,"Williams, Cheryl",825,2019-07-11,"Portland Dance Festival","Portland, OR",Advanced,5,1
+F,"Brown, Cheryl",825,2016-10-20,"Paradise Festival","Ontario, CA",Masters,1,0
+F,"Brown, Cheryl",825,2017-10-19,"Paradise Festival","Orange Co, CA",Masters,5,0
+F,"Brown, Cheryl",825,2019-07-11,"Portland Dance Festival","Portland, OR",Masters,1,0
+F,"Brown, Cheryl",825,2017-04-13,"San Diego Festival","San Diego, CA",Advanced,2,4
+F,"Brown, Cheryl",825,2019-07-11,"Portland Dance Festival","Portland, OR",Advanced,5,1
 L,"Williams, Charles",490,2013-10-25,"Halloween in Harrisburg","Harrisburg, PA",Intermediate,2,0
 L,"Williams, Charles",490,2014-03-20,"Peach State Festival","Atlanta, GA",Intermediate,1,5
 L,"Williams, Charles",490,2015-01-01,"UCWDC World's","Orlando, FL",Intermediate,1,5
@@ -1767,7 +1767,7 @@ F,"Asam, Rita",230,2014-01-01,"UCWDC World's","Nashville, TN",Intermediate,3,3
 F,"Asam, Rita",230,2015-05-21,"FreZno Dance Classic","Fresno, CA",Intermediate,3,6
 F,"Asam, Rita",230,2012-10-11,"Paradise Festival","Ontario, CA",Novice,2,4
 F,"Atkinson, Courtney",258,2013-05-23,"FreZno Dance Classic","Fresno, CA",Novice,2,8
-F,"Atson, Laura",1236,2019-04-11,"Calgary Dance Stampede","Calgary, AB",Novice,2,8
+F,"Watson, Laura",1236,2019-04-11,"Calgary Dance Stampede","Calgary, AB",Novice,2,8
 F,"Austin, Liz",1091,2017-07-06,"Indy Dance Explosion","Indianapolis, IN",Novice,6,1
 F,"Babione, Jennifer",399,2013-06-27,"Colorado Country Classic","Denver, CO",Advanced,4,2
 F,"Babione, Jennifer",399,2013-09-26,"New Mexico Fiesta","Albuquerque, NM",Advanced,5,1
@@ -2245,7 +2245,7 @@ F,"Fait, Kimalyn",599,2014-09-25,"New Mexico Fiesta","Albuquerque, NM",Novice,1,
 F,"Fait, Kimalyn",599,2014-09-25,"New Mexico Fiesta","Albuquerque, NM",Novice,5,1
 F,"Fait, Kimalyn",599,2018-03-29,"San Diego Festival","San Diego, CA",Novice,5,2
 F,"Ferguson, Lila",141,2012-06-24,"Colorado Country Classic","Denver, CO",Novice,1,10
-F,"Ferguson, Sharron",1218,2019-03-08,"High Desert Classic","Lancaster, CA",Novice,3,3
+F,"Ferguson, Sharon",1218,2019-03-08,"High Desert Classic","Lancaster, CA",Novice,3,3
 F,"Ferris, Laina Lee",445,2014-06-26,"Colorado Country Classic","Denver, CO",Masters,2,0
 F,"Ferris, Laina Lee",445,2013-08-02,"Arizona Dance Classic","Mesa, AZ",Novice,1,5
 F,"Ferris, Laina Lee",445,2019-07-04,"Colorado Country Classic","Denver, CO",Novice,3,3
@@ -2426,22 +2426,22 @@ F,"Hoffman, Angela",848,2015-11-12,"Dallas Dance Festival","Dallas, TX",Novice,2
 F,"Hoffman, Angela",848,2015-12-03,"Las Vegas Finale","Las Vegas, NV",Novice,2,4
 F,"Hoffman, Angela",848,2015-09-24,"New Mexico Fiesta","Albuquerque, NM",Novice,1,5
 F,"Hoffman, Angela",848,2015-10-22,"Paradise Festival","Ontario, CA",Novice,4,4
-F,"Hoffner, Darlene",1193,2018-06-23,"Colorado Country Classic","Denver, CO",Masters,1,0
-F,"Hoffner, Darlene",1193,2018-06-23,"Colorado Country Classic","Denver, CO",Novice,5,1
-F,"Hoffner, Tasha",596,2016-10-20,"Paradise Festival","Ontario, CA",Advanced,3,6
-F,"Hoffner, Tasha",596,2017-06-25,"Colorado Country Classic","Denver, CO",Advanced,1,5
-F,"Hoffner, Tasha",596,2017-10-19,"Paradise Festival","Orange Co, CA",Advanced,2,4
-F,"Hoffner, Tasha",596,2017-07-07,"Portland Dance Festival","Portland, OR",Advanced,1,5
-F,"Hoffner, Tasha",596,2018-05-24,"FreZno Dance Classic","Fresno, CA",Advanced,4,4
-F,"Hoffner, Tasha",596,2018-07-12,"Portland Dance Festival","Portland, OR",Advanced,4,2
-F,"Hoffner, Tasha",596,2018-03-29,"San Diego Festival","San Diego, CA",Advanced,5,1
-F,"Hoffner, Tasha",596,2019-04-11,"Calgary Dance Stampede","Calgary, AB",Advanced,1,0
-F,"Hoffner, Tasha",596,2019-07-04,"Colorado Country Classic","Denver, CO",Advanced,5,1
-F,"Hoffner, Tasha",596,2018-04-12,"Calgary Dance Stampede","Calgary, AB",Intermediate,4,2
-F,"Hoffner, Tasha",596,2018-06-23,"Colorado Country Classic","Denver, CO",Intermediate,1,5
-F,"Hoffner, Tasha",596,2014-06-26,"Colorado Country Classic","Denver, CO",Novice,1,10
-F,"Hoffner, Tasha",596,2014-10-16,"Paradise Festival","Ontario, CA",Novice,5,2
-F,"Hoffner, Tasha",596,2015-10-22,"Paradise Festival","Ontario, CA",Novice,3,6
+F,"Hoffner, DeLene",1193,2018-06-23,"Colorado Country Classic","Denver, CO",Masters,1,0
+F,"Hoffner, DeLene",1193,2018-06-23,"Colorado Country Classic","Denver, CO",Novice,5,1
+F,"Sumpter, Tasha",596,2016-10-20,"Paradise Festival","Ontario, CA",Advanced,3,6
+F,"Sumpter, Tasha",596,2017-06-25,"Colorado Country Classic","Denver, CO",Advanced,1,5
+F,"Sumpter, Tasha",596,2017-10-19,"Paradise Festival","Orange Co, CA",Advanced,2,4
+F,"Sumpter, Tasha",596,2017-07-07,"Portland Dance Festival","Portland, OR",Advanced,1,5
+F,"Sumpter, Tasha",596,2018-05-24,"FreZno Dance Classic","Fresno, CA",Advanced,4,4
+F,"Sumpter, Tasha",596,2018-07-12,"Portland Dance Festival","Portland, OR",Advanced,4,2
+F,"Sumpter, Tasha",596,2018-03-29,"San Diego Festival","San Diego, CA",Advanced,5,1
+F,"Sumpter, Tasha",596,2019-04-11,"Calgary Dance Stampede","Calgary, AB",Advanced,1,0
+F,"Sumpter, Tasha",596,2019-07-04,"Colorado Country Classic","Denver, CO",Advanced,5,1
+F,"Sumpter, Tasha",596,2018-04-12,"Calgary Dance Stampede","Calgary, AB",Intermediate,4,2
+F,"Sumpter, Tasha",596,2018-06-23,"Colorado Country Classic","Denver, CO",Intermediate,1,5
+F,"Sumpter, Tasha",596,2014-06-26,"Colorado Country Classic","Denver, CO",Novice,1,10
+F,"Sumpter, Tasha",596,2014-10-16,"Paradise Festival","Ontario, CA",Novice,5,2
+F,"Sumpter, Tasha",596,2015-10-22,"Paradise Festival","Ontario, CA",Novice,3,6
 F,"Holcomb, Cindy",540,2014-01-01,"UCWDC World's","Nashville, TN",Masters,4,0
 F,"Hooker, Anita",584,2014-05-26,"FreZno Dance Classic","Fresno, CA",Novice,7,1
 F,"Hoover, Laura",937,2016-03-24,"San Diego Festival","San Diego, CA",Advanced,3,3
@@ -2629,19 +2629,19 @@ F,"Lucas, Bonnie",229,2012-10-11,"Paradise Festival","Ontario, CA",Novice,1,5
 F,"Lucas, Carrie",1065,2017-04-13,"San Diego Festival","San Diego, CA",Advanced,5,1
 F,"Lucas, Carrie",1065,2018-03-29,"San Diego Festival","San Diego, CA",Advanced,4,2
 F,"Lucas, Carrie",1065,2019-04-18,"San Diego Festival","San Diego, CA",Advanced,4,2
-F,"Lucas, Meliss",1312,2019-10-31,"Mountain Magic","Lake Tahoe, NV",Novice,6,1
-F,"Lucia-DeGeorge, Angeline",454,2013-08-29,"South Bay Dance Fling","San Jose, CA",Advanced,3,3
-F,"Lucia-DeGeorge, Angeline",454,2014-08-28,"South Bay Dance Fling","San Jose, CA",Advanced,2,4
-F,"Lucia-DeGeorge, Angeline",454,2015-09-03,"South Bay Dance Fling","San Jose, CA",Advanced,3,3
-F,"Lucia-DeGeorge, Angeline",454,2016-05-26,"FreZno Dance Classic","Fresno, CA",Advanced,1,5
-F,"Lucia-DeGeorge, Angeline",454,2016-09-01,"South Bay Dance Fling","San Jose, CA",Advanced,1,5
-F,"Lucia-DeGeorge, Angeline",454,2017-05-25,"FreZno Dance Classic","Fresno, CA",Advanced,3,3
-F,"Lucia-DeGeorge, Angeline",454,2017-11-02,"Mountain Magic","Lake Tahoe, NV",Advanced,1,5
-F,"Lucia-DeGeorge, Angeline",454,2017-08-31,"South Bay Dance Fling","San Jose, CA",Advanced,2,4
-F,"Lucia-DeGeorge, Angeline",454,2018-01-01,"UCWDC World's","San Francisco, CA",Advanced,3,6
-F,"Lucia-DeGeorge, Angeline",454,2018-05-24,"FreZno Dance Classic","Fresno, CA",Advanced,2,8
-F,"Lucia-DeGeorge, Angeline",454,2019-05-23,"FreZno Dance Classic","Fresno, CA",Advanced,3,6
-F,"Lucia-DeGeorge, Angeline",454,2019-10-31,"Mountain Magic","Lake Tahoe, NV",Advanced,3,3
+F,"Lucas, Melissa",1312,2019-10-31,"Mountain Magic","Lake Tahoe, NV",Novice,6,1
+F,"Lucia, Angeline",454,2013-08-29,"South Bay Dance Fling","San Jose, CA",Advanced,3,3
+F,"Lucia, Angeline",454,2014-08-28,"South Bay Dance Fling","San Jose, CA",Advanced,2,4
+F,"Lucia, Angeline",454,2015-09-03,"South Bay Dance Fling","San Jose, CA",Advanced,3,3
+F,"Lucia, Angeline",454,2016-05-26,"FreZno Dance Classic","Fresno, CA",Advanced,1,5
+F,"Lucia, Angeline",454,2016-09-01,"South Bay Dance Fling","San Jose, CA",Advanced,1,5
+F,"Lucia, Angeline",454,2017-05-25,"FreZno Dance Classic","Fresno, CA",Advanced,3,3
+F,"Lucia, Angeline",454,2017-11-02,"Mountain Magic","Lake Tahoe, NV",Advanced,1,5
+F,"Lucia, Angeline",454,2017-08-31,"South Bay Dance Fling","San Jose, CA",Advanced,2,4
+F,"Lucia, Angeline",454,2018-01-01,"UCWDC World's","San Francisco, CA",Advanced,3,6
+F,"Lucia, Angeline",454,2018-05-24,"FreZno Dance Classic","Fresno, CA",Advanced,2,8
+F,"Lucia, Angeline",454,2019-05-23,"FreZno Dance Classic","Fresno, CA",Advanced,3,6
+F,"Lucia, Angeline",454,2019-10-31,"Mountain Magic","Lake Tahoe, NV",Advanced,3,3
 F,"Lundahl, Joan",119,2014-01-01,"UCWDC World's","Nashville, TN",Masters,1,0
 F,"Lundahl, Joan",119,2017-01-01,"UCWDC World's","Nashville, TN",Masters,3,0
 F,"Lundahl, Joan",119,2020-01-05,"UCWDC World's","Nashville, TN",Masters,3,0
@@ -2782,26 +2782,26 @@ F,"Miller, Karen",350,2013-01-01,"UCWDC World's","Nashville, TN",Advanced,4,2
 F,"Miller, Karen",350,2015-07-10,"Portland Dance Festival","Portland, OR",Novice,3,3
 F,"Miller, Karen",350,2018-03-29,"San Diego Festival","San Diego, CA",Novice,9,1
 F,"Miller, Pamela",179,2012-07-13,"Portland Dance Festival","Portland, OR",Novice,5,2
-F,"Miller-Skredsvig, Haley",176,2014-10-16,"Paradise Festival","Ontario, CA",Advanced,1,10
-F,"Miller-Skredsvig, Haley",176,2015-10-22,"Paradise Festival","Ontario, CA",Advanced,1,5
-F,"Miller-Skredsvig, Haley",176,2015-07-10,"Portland Dance Festival","Portland, OR",Advanced,1,5
-F,"Miller-Skredsvig, Haley",176,2015-01-01,"UCWDC World's","Orlando, FL",Advanced,3,3
-F,"Miller-Skredsvig, Haley",176,2016-10-20,"Paradise Festival","Ontario, CA",Advanced,1,10
-F,"Miller-Skredsvig, Haley",176,2016-07-07,"Portland Dance Festival","Portland, OR",Advanced,3,3
-F,"Miller-Skredsvig, Haley",176,2017-07-07,"Portland Dance Festival","Portland, OR",Advanced,5,1
-F,"Miller-Skredsvig, Haley",176,2018-10-18,"Paradise Festival","Orange Co, CA",Advanced,3,3
-F,"Miller-Skredsvig, Haley",176,2018-07-12,"Portland Dance Festival","Portland, OR",Advanced,1,5
-F,"Miller-Skredsvig, Haley",176,2019-05-23,"FreZno Dance Classic","Fresno, CA",Advanced,2,8
-F,"Miller-Skredsvig, Haley",176,2019-10-17,"Paradise Festival","Orange Co, CA",Advanced,3,3
-F,"Miller-Skredsvig, Haley",176,2019-07-11,"Portland Dance Festival","Portland, OR",Advanced,3,3
-F,"Miller-Skredsvig, Haley",176,2012-08-30,"South Bay Dance Fling","San Jose, CA",Intermediate,1,5
-F,"Miller-Skredsvig, Haley",176,2013-10-17,"Paradise Festival","Ontario, CA",Intermediate,1,10
-F,"Miller-Skredsvig, Haley",176,2013-07-11,"Portland Dance Festival","Portland, OR",Intermediate,1,10
-F,"Miller-Skredsvig, Haley",176,2014-06-26,"Colorado Country Classic","Denver, CO",Intermediate,3,3
-F,"Miller-Skredsvig, Haley",176,2014-09-25,"New Mexico Fiesta","Albuquerque, NM",Intermediate,1,5
-F,"Miller-Skredsvig, Haley",176,2014-07-11,"Portland Dance Festival","Portland, OR",Intermediate,1,5
-F,"Miller-Skredsvig, Haley",176,2012-07-13,"Portland Dance Festival","Portland, OR",Novice,2,8
-F,"Miller-Skredsvig, Haley",176,2013-08-29,"South Bay Dance Fling","San Jose, CA",Novice,2,8
+F,"Skredsvig, Haley",176,2014-10-16,"Paradise Festival","Ontario, CA",Advanced,1,10
+F,"Skredsvig, Haley",176,2015-10-22,"Paradise Festival","Ontario, CA",Advanced,1,5
+F,"Skredsvig, Haley",176,2015-07-10,"Portland Dance Festival","Portland, OR",Advanced,1,5
+F,"Skredsvig, Haley",176,2015-01-01,"UCWDC World's","Orlando, FL",Advanced,3,3
+F,"Skredsvig, Haley",176,2016-10-20,"Paradise Festival","Ontario, CA",Advanced,1,10
+F,"Skredsvig, Haley",176,2016-07-07,"Portland Dance Festival","Portland, OR",Advanced,3,3
+F,"Skredsvig, Haley",176,2017-07-07,"Portland Dance Festival","Portland, OR",Advanced,5,1
+F,"Skredsvig, Haley",176,2018-10-18,"Paradise Festival","Orange Co, CA",Advanced,3,3
+F,"Skredsvig, Haley",176,2018-07-12,"Portland Dance Festival","Portland, OR",Advanced,1,5
+F,"Skredsvig, Haley",176,2019-05-23,"FreZno Dance Classic","Fresno, CA",Advanced,2,8
+F,"Skredsvig, Haley",176,2019-10-17,"Paradise Festival","Orange Co, CA",Advanced,3,3
+F,"Skredsvig, Haley",176,2019-07-11,"Portland Dance Festival","Portland, OR",Advanced,3,3
+F,"Skredsvig, Haley",176,2012-08-30,"South Bay Dance Fling","San Jose, CA",Intermediate,1,5
+F,"Skredsvig, Haley",176,2013-10-17,"Paradise Festival","Ontario, CA",Intermediate,1,10
+F,"Skredsvig, Haley",176,2013-07-11,"Portland Dance Festival","Portland, OR",Intermediate,1,10
+F,"Skredsvig, Haley",176,2014-06-26,"Colorado Country Classic","Denver, CO",Intermediate,3,3
+F,"Skredsvig, Haley",176,2014-09-25,"New Mexico Fiesta","Albuquerque, NM",Intermediate,1,5
+F,"Skredsvig, Haley",176,2014-07-11,"Portland Dance Festival","Portland, OR",Intermediate,1,5
+F,"Skredsvig, Haley",176,2012-07-13,"Portland Dance Festival","Portland, OR",Novice,2,8
+F,"Skredsvig, Haley",176,2013-08-29,"South Bay Dance Fling","San Jose, CA",Novice,2,8
 F,"Mock, Sylna",468,2013-09-26,"New Mexico Fiesta","Albuquerque, NM",Novice,8,0
 F,"Montanio, Lisa",865,2020-01-05,"UCWDC World's","Nashville, TN",Masters,5,0
 F,"Montanio, Lisa",865,2019-01-01,"UCWDC World's","Nashville, TN",Intermediate,4,2
@@ -2901,10 +2901,10 @@ F,"Peet, D'Leen",829,2015-09-03,"South Bay Dance Fling","San Jose, CA",Novice,3,
 F,"Peet, D'Leen",829,2016-09-01,"South Bay Dance Fling","San Jose, CA",Novice,4,2
 F,"Peete, D'Leene",1202,2018-07-12,"Portland Dance Festival","Portland, OR",Advanced,5,1
 F,"Perez, Angela",1062,2017-04-13,"San Diego Festival","San Diego, CA",Novice,1,5
-F,"Perez, Kristina",519,2015-12-03,"Las Vegas Finale","Las Vegas, NV",Advanced,2,4
-F,"Perez, Kristina",519,2017-04-13,"San Diego Festival","San Diego, CA",Advanced,1,5
-F,"Perez, Kristina",519,2013-12-05,"Las Vegas Finale","Las Vegas, NV",Intermediate,1,5
-F,"Perez, Kristina",519,2014-06-26,"Colorado Country Classic","Denver, CO",Intermediate,2,4
+F,"Perez-Banda, Kristina",519,2015-12-03,"Las Vegas Finale","Las Vegas, NV",Advanced,2,4
+F,"Perez-Banda, Kristina",519,2017-04-13,"San Diego Festival","San Diego, CA",Advanced,1,5
+F,"Perez-Banda, Kristina",519,2013-12-05,"Las Vegas Finale","Las Vegas, NV",Intermediate,1,5
+F,"Perez-Banda, Kristina",519,2014-06-26,"Colorado Country Classic","Denver, CO",Intermediate,2,4
 F,"Peterson, Bessie",962,2016-06-23,"Colorado Country Classic","Denver, CO",Novice,4,2
 F,"Peterson, Bessie",962,2017-06-25,"Colorado Country Classic","Denver, CO",Novice,2,4
 F,"Pham, Kendall",396,2013-04-04,"MidAtlantic Classic","Herndon, VA",Advanced,1,0
@@ -2984,8 +2984,8 @@ F,"Reed, Patti",237,2017-03-30,"Calgary Dance Stampede","Calgary, AB",Intermedia
 F,"Reed, Theresa",805,2015-07-03,"Indy Dance Explosion","Indianapolis, IN",Novice,3,6
 F,"Reinartz, Christin",695,2014-11-06,"Dallas Dance Festival","Dallas, TX",Novice,3,3
 F,"Reuss, Celia",1094,2017-07-06,"Indy Dance Explosion","Indianapolis, IN",Masters,2,0
-F,"Reynolds, Ashlee",674,2014-10-16,"Paradise Festival","Ontario, CA",Intermediate,5,1
-F,"Reynolds, Ashlee",674,2017-10-19,"Paradise Festival","Orange Co, CA",Intermediate,7,1
+F,"Dickinson, Ashlee",674,2014-10-16,"Paradise Festival","Ontario, CA",Intermediate,5,1
+F,"Dickinson, Ashlee",674,2017-10-19,"Paradise Festival","Orange Co, CA",Intermediate,7,1
 F,"Reynolds, Sherry",868,2015-12-03,"Las Vegas Finale","Las Vegas, NV",Advanced,3,3
 F,"Reynolds, Sherry",868,2015-09-03,"South Bay Dance Fling","San Jose, CA",Advanced,1,5
 F,"Reynolds, Sherry",868,2016-09-01,"South Bay Dance Fling","San Jose, CA",Advanced,2,4
@@ -3061,8 +3061,8 @@ F,"Sandoval, Lisa",583,2019-04-18,"San Diego Festival","San Diego, CA",Intermedi
 F,"Sandoval, Lisa",583,2014-05-26,"FreZno Dance Classic","Fresno, CA",Novice,2,12
 F,"Sandoval, Lisa",583,2014-08-28,"South Bay Dance Fling","San Jose, CA",Novice,1,10
 F,"Sandoval, Lisa",583,2015-01-02,"Palm Springs New Year","Palm Springs, CA",Novice,5,2
-F,"Satterthwait, Corinne",1304,2019-10-17,"Paradise Festival","Orange Co, CA",Novice,4,4
-F,"Satterthwait, Corinne",1304,2019-10-17,"Paradise Festival","Orange Co, CA",Novice,5,2
+F,"Satterthwaite, Corinne",1304,2019-10-17,"Paradise Festival","Orange Co, CA",Novice,4,4
+F,"Satterthwaite, Corinne",1304,2019-10-17,"Paradise Festival","Orange Co, CA",Novice,5,2
 F,"Savage, RoAnna",441,2013-07-11,"Portland Dance Festival","Portland, OR",Intermediate,9,1
 F,"Savage, RoAnna",441,2015-07-10,"Portland Dance Festival","Portland, OR",Intermediate,2,4
 F,"Savage, RoAnna",441,2017-07-07,"Portland Dance Festival","Portland, OR",Intermediate,5,1
@@ -3351,37 +3351,37 @@ F,"Wilkans, Cindy",742,2015-02-27,"Dance Camp Chicago","Elmhurst, IL",Novice,8,1
 F,"Wilkes, Mary",557,2017-03-30,"Calgary Dance Stampede","Calgary, AB",Intermediate,3,3
 F,"Wilkes, Mary",557,2014-04-24,"Calgary Dance Stampede","Calgary, AB",Novice,5,1
 F,"Wilkes, Mary",557,2015-04-09,"Calgary Dance Stampede","Calgary, AB",Novice,2,4
-F,"Williams, Cheryl",825,2015-10-22,"Paradise Festival","Ontario, CA",Masters,1,0
-F,"Williams, Cheryl",825,2016-06-23,"Colorado Country Classic","Denver, CO",Masters,3,0
-F,"Williams, Cheryl",825,2016-11-11,"Dallas Dance Festival","Dallas, TX",Masters,4,0
-F,"Williams, Cheryl",825,2016-03-24,"San Diego Festival","San Diego, CA",Masters,3,0
-F,"Williams, Cheryl",825,2017-06-25,"Colorado Country Classic","Denver, CO",Masters,2,0
-F,"Williams, Cheryl",825,2017-04-13,"San Diego Festival","San Diego, CA",Masters,1,0
-F,"Williams, Cheryl",825,2017-01-01,"UCWDC World's","Nashville, TN",Masters,1,0
-F,"Williams, Cheryl",825,2018-01-01,"UCWDC World's","San Francisco, CA",Masters,2,0
-F,"Williams, Cheryl",825,2018-10-18,"Paradise Festival","Orange Co, CA",Masters,1,0
-F,"Williams, Cheryl",825,2019-10-17,"Paradise Festival","Orange Co, CA",Masters,3,0
-F,"Williams, Cheryl",825,2019-04-18,"San Diego Festival","San Diego, CA",Masters,3,0
-F,"Williams, Cheryl",825,2020-01-05,"UCWDC World's","Nashville, TN",Masters,4,0
-F,"Williams, Cheryl",825,2016-11-03,"Mountain Magic","Lake Tahoe, NV",Advanced,1,5
-F,"Williams, Cheryl",825,2016-07-07,"Portland Dance Festival","Portland, OR",Advanced,4,2
-F,"Williams, Cheryl",825,2017-06-25,"Colorado Country Classic","Denver, CO",Advanced,2,4
-F,"Williams, Cheryl",825,2017-01-01,"UCWDC World's","Nashville, TN",Advanced,4,2
-F,"Williams, Cheryl",825,2018-01-01,"UCWDC World's","San Francisco, CA",Advanced,5,2
-F,"Williams, Cheryl",825,2018-05-24,"FreZno Dance Classic","Fresno, CA",Advanced,7,1
-F,"Williams, Cheryl",825,2018-07-12,"Portland Dance Festival","Portland, OR",Advanced,2,4
-F,"Williams, Cheryl",825,2019-01-01,"UCWDC World's","Nashville, TN",Advanced,4,0
-F,"Williams, Cheryl",825,2019-01-01,"UCWDC World's","Nashville, TN",Advanced,5,0
-F,"Williams, Cheryl",825,2020-01-05,"UCWDC World's","Nashville, TN",Advanced,4,4
-F,"Williams, Cheryl",825,2015-12-03,"Las Vegas Finale","Las Vegas, NV",Intermediate,1,5
-F,"Williams, Cheryl",825,2015-11-05,"Mountain Magic","Lake Tahoe, NV",Intermediate,4,2
-F,"Williams, Cheryl",825,2015-09-24,"New Mexico Fiesta","Albuquerque, NM",Intermediate,1,0
-F,"Williams, Cheryl",825,2015-10-22,"Paradise Festival","Ontario, CA",Intermediate,2,8
-F,"Williams, Cheryl",825,2016-05-26,"FreZno Dance Classic","Fresno, CA",Intermediate,2,4
-F,"Williams, Cheryl",825,2016-03-24,"San Diego Festival","San Diego, CA",Intermediate,3,3
-F,"Williams, Cheryl",825,2016-01-03,"UCWDC World's","Nashville, TN",Intermediate,2,8
-F,"Williams, Cheryl",825,2015-07-10,"Portland Dance Festival","Portland, OR",Novice,1,5
-F,"Williams, Cheryl",825,2015-09-03,"South Bay Dance Fling","San Jose, CA",Novice,1,5
+F,"Brown, Cheryl",825,2015-10-22,"Paradise Festival","Ontario, CA",Masters,1,0
+F,"Brown, Cheryl",825,2016-06-23,"Colorado Country Classic","Denver, CO",Masters,3,0
+F,"Brown, Cheryl",825,2016-11-11,"Dallas Dance Festival","Dallas, TX",Masters,4,0
+F,"Brown, Cheryl",825,2016-03-24,"San Diego Festival","San Diego, CA",Masters,3,0
+F,"Brown, Cheryl",825,2017-06-25,"Colorado Country Classic","Denver, CO",Masters,2,0
+F,"Brown, Cheryl",825,2017-04-13,"San Diego Festival","San Diego, CA",Masters,1,0
+F,"Brown, Cheryl",825,2017-01-01,"UCWDC World's","Nashville, TN",Masters,1,0
+F,"Brown, Cheryl",825,2018-01-01,"UCWDC World's","San Francisco, CA",Masters,2,0
+F,"Brown, Cheryl",825,2018-10-18,"Paradise Festival","Orange Co, CA",Masters,1,0
+F,"Brown, Cheryl",825,2019-10-17,"Paradise Festival","Orange Co, CA",Masters,3,0
+F,"Brown, Cheryl",825,2019-04-18,"San Diego Festival","San Diego, CA",Masters,3,0
+F,"Brown, Cheryl",825,2020-01-05,"UCWDC World's","Nashville, TN",Masters,4,0
+F,"Brown, Cheryl",825,2016-11-03,"Mountain Magic","Lake Tahoe, NV",Advanced,1,5
+F,"Brown, Cheryl",825,2016-07-07,"Portland Dance Festival","Portland, OR",Advanced,4,2
+F,"Brown, Cheryl",825,2017-06-25,"Colorado Country Classic","Denver, CO",Advanced,2,4
+F,"Brown, Cheryl",825,2017-01-01,"UCWDC World's","Nashville, TN",Advanced,4,2
+F,"Brown, Cheryl",825,2018-01-01,"UCWDC World's","San Francisco, CA",Advanced,5,2
+F,"Brown, Cheryl",825,2018-05-24,"FreZno Dance Classic","Fresno, CA",Advanced,7,1
+F,"Brown, Cheryl",825,2018-07-12,"Portland Dance Festival","Portland, OR",Advanced,2,4
+F,"Brown, Cheryl",825,2019-01-01,"UCWDC World's","Nashville, TN",Advanced,4,0
+F,"Brown, Cheryl",825,2019-01-01,"UCWDC World's","Nashville, TN",Advanced,5,0
+F,"Brown, Cheryl",825,2020-01-05,"UCWDC World's","Nashville, TN",Advanced,4,4
+F,"Brown, Cheryl",825,2015-12-03,"Las Vegas Finale","Las Vegas, NV",Intermediate,1,5
+F,"Brown, Cheryl",825,2015-11-05,"Mountain Magic","Lake Tahoe, NV",Intermediate,4,2
+F,"Brown, Cheryl",825,2015-09-24,"New Mexico Fiesta","Albuquerque, NM",Intermediate,1,0
+F,"Brown, Cheryl",825,2015-10-22,"Paradise Festival","Ontario, CA",Intermediate,2,8
+F,"Brown, Cheryl",825,2016-05-26,"FreZno Dance Classic","Fresno, CA",Intermediate,2,4
+F,"Brown, Cheryl",825,2016-03-24,"San Diego Festival","San Diego, CA",Intermediate,3,3
+F,"Brown, Cheryl",825,2016-01-03,"UCWDC World's","Nashville, TN",Intermediate,2,8
+F,"Brown, Cheryl",825,2015-07-10,"Portland Dance Festival","Portland, OR",Novice,1,5
+F,"Brown, Cheryl",825,2015-09-03,"South Bay Dance Fling","San Jose, CA",Novice,1,5
 F,"Williams, Cori",1020,2016-11-03,"Mountain Magic","Lake Tahoe, NV",Novice,4,2
 F,"Williams, Jasmine",922,2017-01-01,"UCWDC World's","Nashville, TN",Advanced,5,1
 F,"Williams, Jasmine",922,2016-03-12,"Texas Hoedown","Fort Worth, TX",Novice,5,1
@@ -3471,7 +3471,7 @@ F,"Welch, Jacqueline",1400,2016-05-26,"FreZno Dance Classic","Fresno, CA",Novice
 F,"Cinciripini, Theresa",839,2017-01-01,"UCWDC World's","Nashville, TN",Novice,9,1
 L,"Housego, Cliff",376,2018-03-09,"High Desert Classic","Lancaster, CA",Intermediate,1,5
 L,"Southernwood, Katrina",1401,2019-04-11,"Calgary Dance Stampede","Calgary, AB",Novice,4,2
-F,"Thorp, Stacy",1402,2019-05-23,"FreZno Dance Classic","Fresno, CA",Novice,11,1
+F,"Thorpe, Stacy",1402,2019-05-23,"FreZno Dance Classic","Fresno, CA",Novice,11,1
 F,"Locke, Carol",1403,2019-05-23,"FreZno Dance Classic","Fresno, CA",Novice,12,1
-F,"Reynolds, Ashlee",674,2019-05-23,"FreZno Dance Classic","Fresno, CA",Novice,13,1
+F,"Dickinson, Ashlee",674,2019-05-23,"FreZno Dance Classic","Fresno, CA",Novice,13,1
 F,"Adams, Nikki",1301,2019-05-23,"FreZno Dance Classic","Fresno, CA",Novice,14,1

@@ -147,7 +147,7 @@ Open `create_db_tables.xlsx` in Excel, then for each of the `table_` worksheets 
 - **IMPORTANT:** **DO NOT** select the **CSV UTF-8** type, which appears earlier in the list than the non-UTF-8 type
 - Change the `File name`, e.g: `table_Competitors.csv`
 - Navigate to the database directory, e.g. `db_tables_MASTER`
-- Click `Save`, then `OK` to save only the active sheet, then `OK` (if overwriting an existing file)
+- Click `Save`, then `Yes` if overwriting an existing file, then `OK` to save only the active sheet
 
 To view the actual Power Query queries used to generate the data tables, update the Data Source as described above, then:
 

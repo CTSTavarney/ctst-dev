@@ -327,6 +327,7 @@ sed -i -E \
 -e '/UCWDC World\x27s/ s/;2020;/;2020-01-05;/' \
 "${OUT_CSV}"
 
+# Apply corrections to legacy points data
 source "${SCRIPT_DIR}/corrections.sh" "${OUT_CSV}"
 
 # Convert semicolons to commas, since some applications (GitHub Code display),
@@ -335,4 +336,8 @@ OUT_CSV_TMP=$(mktemp)
 awk -v Q="\x22" 'BEGIN { FS=";"; OFS="," }; { print $1,Q$2Q,$3,$4,Q$5Q,Q$6Q,$7,$8,$9 }' "${OUT_CSV}" > "${OUT_CSV_TMP}"
 cp "${OUT_CSV_TMP}" "${OUT_CSV}"
 
+# Apply competitor name/number changes
+source "${SCRIPT_DIR}/name_number_changes.sh" "${OUT_CSV}"
+
+# Convert Unix line endings (LF) to Windows line endings (CRLF)
 unix2dos "${OUT_CSV}"
