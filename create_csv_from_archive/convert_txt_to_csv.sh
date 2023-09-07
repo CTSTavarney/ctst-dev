@@ -339,5 +339,14 @@ cp "${OUT_CSV_TMP}" "${OUT_CSV}"
 # Apply competitor name/number changes
 source "${SCRIPT_DIR}/name_number_changes.sh" "${OUT_CSV}"
 
+# Add 'Num Entries' as the last field in the column header
+sed -i -E '1 s/$/,\"Num Entries\"/' "${OUT_CSV}"
+
+# Set all 'Num Entries' column values to a default value of -1 (unknown)
+sed -i -E '2,$ s/$/,-1/' "${OUT_CSV}"
+
+# Include results from post-2020 events, which include the 'Num Entries' values
+tail -n +2 "${SCRIPT_DIR}/post_2020_results.csv" >> "${OUT_CSV}"
+
 # Convert Unix line endings (LF) to Windows line endings (CRLF)
 unix2dos "${OUT_CSV}"
