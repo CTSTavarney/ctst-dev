@@ -9,6 +9,7 @@
 # 2019 Calgary Novice 4th Place Leader. Add Katrina Southernwood (1401) with 2 Points
 # 2019 FreZno Novice 11th Place Follower. Add Stacy Thorp (1402) with 1 Point
 # 2019 FreZno Novice 12th Place Follower. Add Carol Locke (1403) with 1 Point
+# 2020 Worlds Masters 1st Place Leader. Add Dennis Rose (1404) with 0 Points
 #
 
 CSV_FILE="${1}"
@@ -245,3 +246,7 @@ replace \
 replace \
 'F;Lancelona, Sheila;392;2013-04-04;MidAtlantic Classic;Herndon, VA;Intermediate;4;2' \
 'F;Lancelotta, Sheila;392;2013-04-04;MidAtlantic Classic;Herndon, VA;Intermediate;4;2'
+
+replace \
+"L;Rose, David;611;2020-01-05;UCWDC World's;Nashville, TN;Masters;1;0" \
+"L;Rose, Dennis;1404;2020-01-05;UCWDC World's;Nashville, TN;Masters;1;0"

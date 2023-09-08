@@ -10,7 +10,10 @@
 # ./convert_txt_to_csv.sh \
 #    --leadertxt=CTST_Points_Registry_Mens_1142020.txt \
 #    --followertxt=CTST_Points_Registry_Ladies_1142020.txt \
-#    --outcsv=points_combined.csv
+#    --outcsv=points_old.csv
+#
+# Alternatively, run the helper script:
+# ./run.sh
 #
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
@@ -345,8 +348,8 @@ sed -i -E '1 s/$/,\"Num Entries\"/' "${OUT_CSV}"
 # Set all 'Num Entries' column values to a default value of -1 (unknown)
 sed -i -E '2,$ s/$/,-1/' "${OUT_CSV}"
 
-# Include results from post-2020 events, which include the 'Num Entries' values
-tail -n +2 "${SCRIPT_DIR}/post_2020_results.csv" >> "${OUT_CSV}"
-
 # Convert Unix line endings (LF) to Windows line endings (CRLF)
 unix2dos "${OUT_CSV}"
+
+# Include results from post-2020 events, which include the 'Num Entries' values (omitting the header line)
+#tail -n +2 "${SCRIPT_DIR}/post_2020_results.csv" >> "${OUT_CSV}"

@@ -1,6 +1,6 @@
-# Convert PDF Points Registry data to combined CSV file
+# Convert PDF Points Registry data to combined CSV (old data) file
 
-To generate a single CSV file (`points_combined.csv`) from the legacy Points Registry Men's and Women's PDF files:
+To generate a single CSV file (`points_old.csv`) from the legacy Points Registry Men's and Women's PDF files:
 
 ## Download the archived legacy CTST Point Registry PDF files
 - `CTST_Points_Registry_Mens_1142020.pdf`
@@ -15,7 +15,7 @@ To generate a single CSV file (`points_combined.csv`) from the legacy Points Reg
 ## Convert and combine the `.txt` files to a `.csv` file using the conversion script
 
 ```bash
-./convert_txt_to_csv.sh -l CTST_Points_Registry_Mens_1142020.txt -f CTST_Points_Registry_Ladies_1142020.txt -o points_combined.csv
+./convert_txt_to_csv.sh -l CTST_Points_Registry_Mens_1142020.txt -f CTST_Points_Registry_Ladies_1142020.txt -o points_old.csv
 ```
 
 or, use the following helper script to run the above command:
@@ -32,7 +32,7 @@ The script makes the following changes to the original legacy data:
 - Replace event year with date to allow events to be sorted chronologically within each year
 - Source the `corrections.sh` script to fix errors in competitors' points data
 
-The resulting `points_combined.csv` file (combined data for both Leaders and Followers) can then be loaded into Excel or a database.
+The resulting `points_old.csv` file (old, combined data for both Leaders and Followers) can then be loaded into Excel or a database.
 In the `create_db_tables` directory is an Excel workbook that uses [Power Query](https://learn.microsoft.com/en-us/power-query/power-query-what-is-power-query) to generate a set of individual Excel data tables from which CSV files can be generated and written to the `db_tables_MASTER` directory to form the basis for an actual database.
 
 ## Corrections made to Competitor Points
@@ -123,6 +123,8 @@ There were 32 followers, see: http://steprightsolutions.com/events/frezno2019/ro
 2019 Paradise Intermediate 4th Place Follower. Replace Larry Sanders (362) with Lisa Sandoval (583) with 2 Points
 2019 Paradise Advanced 5th Place Leader. Replace Jean Ann Taylor (924) with Jonathan Taylor (968) with 1 Point
 2019 Paradise Masters 4th Place Follower. Replace Larry Sanders (362) with Lisa Sandoval (583) with 0 Points
+
+2020 Worlds Masters 1st Place Leader. Replace David Rose (611) with Dennis Rose (1404) with 0 Points
 ```
 
 ## Competitor numbers from 1400 were assigned to competitors omitted from the legacy Points Registry
@@ -132,4 +134,5 @@ There were 32 followers, see: http://steprightsolutions.com/events/frezno2019/ro
 2019 Calgary Novice 4th Place Leader. Add Katrina Southernwood (1401) with 2 Points
 2019 FreZno Novice 11th Place Follower. Add Stacy Thorp (1402) with 1 Point
 2019 FreZno Novice 12th Place Follower. Add Carol Locke (1403) with 1 Point
+2020 Worlds Masters 1st Place Leader. Add Dennis Rose (1404) with 0 Points
 ```

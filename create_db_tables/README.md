@@ -119,7 +119,7 @@ In the legacy Points Registry, each competitor was listed in EITHER the Men's OR
 
 `create_db_tables.xlsx` is an Excel workbook that uses [Power Query](https://learn.microsoft.com/en-us/power-query/power-query-what-is-power-query) to generate the database tables.
 
-This Excel workbook uses as its data source the CSV file, `points_combined.csv`, in the `create_csv_from_archive` directory, a combined file containing all Leader and Follower points data.
+This Excel workbook uses as its data source the CSV file, `points_MASTER.csv`, in the `create_csv_from_archive` directory, a combined file containing all Leader and Follower points data, both old and new contest data.
 
 To (re-)generate the Excel data tables for the database in the Excel workbook, update the Data Source, then re-run the Power Query queries:
 
@@ -127,11 +127,11 @@ To (re-)generate the Excel data tables for the database in the Excel workbook, u
 - If the message `SECURITY WARNING External Data Connections have been disabled` appears, click `Enable Content`
 - Navigate to `Data > Get Data v > Data Source Settings...`
 - Click `OK` to trust the source of the file
-- In the Data source settings dialog, click on the entry for the `points_combined.csv` file
+- In the Data source settings dialog, click on the entry for the `points_MASTER.csv` file
 - Click `Change Source...`
 - Select `Browse...` under File path
-- Navigate to the directory containing the `points_combined.csv` file
-- In the Import Data dialog, select the `points_combined.csv` file, then click `Import`, then `OK`, then `Close`
+- Navigate to the directory containing the `points_MASTER.csv` file
+- In the Import Data dialog, select the `points_MASTER.csv` file, then click `Import`, then `OK`, then `Close`
 - On the Data ribbon, click `Queries & Connections`, then, still on the Data ribbon, click `Refresh All v`
 - Wait for the data tables to finish loading on the Queries & Connections pane
 - Click `File` then `Save` to save the updated workbook

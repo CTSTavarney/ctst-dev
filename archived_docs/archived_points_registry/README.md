@@ -6,7 +6,7 @@ These documents are the primary source of data used to construct the CTST Points
 
 There are two documents, one PDF file each for Men's Points and Women's Points.
 
-Each of these documents is copied to the `create_csv_from_archive` directory, where scripts are run to extact the points data and generate a CSV file containing combined data for all leaders and followers.
+Each of these documents is copied to the `create_csv_from_archive` directory, where scripts are run to extact the points data and generate a CSV file containing combined data for all leaders and followers. This combined data is for the legacy data only (up to Jan 2020), and will eventually be combined with the new (post-2020) data.
 
 Note that these documents were created by the CTST from the information provided to the CTST by each Event Director.
 None of these CTST documents themselves constitute the "official" contest scores, and there may be errors/omissions therein.
