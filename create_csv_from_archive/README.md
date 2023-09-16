@@ -1,6 +1,16 @@
 # Convert PDF Points Registry data to combined CSV (old data) file
 
-To generate a single CSV file (`points_old.csv`) from the legacy Points Registry Men's and Women's PDF files:
+All files in this directory exist to extract legacy CTST Points data from the two input files:
+- `CTST_Points_Registry_Mens_1142020.pdf` (110 pages)
+- `CTST_Points_Registry_Ladies_1142020.pdf` (133 pages)
+
+and output the extracted data to a single CSV file:
+
+- `points_2012_to_2020_legacy.csv` (3,476 result records)
+
+---
+
+To generate a single CSV file (`points_2012_to_2020_legacy.csv`) from the legacy Points Registry Men's and Women's PDF files:
 
 ## Download the archived legacy CTST Point Registry PDF files
 - `CTST_Points_Registry_Mens_1142020.pdf`
@@ -15,7 +25,7 @@ To generate a single CSV file (`points_old.csv`) from the legacy Points Registry
 ## Convert and combine the `.txt` files to a `.csv` file using the conversion script
 
 ```bash
-./convert_txt_to_csv.sh -l CTST_Points_Registry_Mens_1142020.txt -f CTST_Points_Registry_Ladies_1142020.txt -o points_old.csv
+./convert_txt_to_csv.sh -l CTST_Points_Registry_Mens_1142020.txt -f CTST_Points_Registry_Ladies_1142020.txt -o points_2012_to_2020_legacy.csv
 ```
 
 or, use the following helper script to run the above command:
@@ -32,8 +42,11 @@ The script makes the following changes to the original legacy data:
 - Replace event year with date to allow events to be sorted chronologically within each year
 - Source the `corrections.sh` script to fix errors in competitors' points data
 
-The resulting `points_old.csv` file (old, combined data for both Leaders and Followers) can then be loaded into Excel or a database.
-In the `create_db_tables` directory is an Excel workbook that uses [Power Query](https://learn.microsoft.com/en-us/power-query/power-query-what-is-power-query) to generate a set of individual Excel data tables from which CSV files can be generated and written to the `db_tables_MASTER` directory to form the basis for an actual database.
+Copy the resulting `points_2012_to_2020_legacy.csv` file (old, combined data for both Leaders and Followers)
+into the `create_csv_new` directory. This legacy data can then be combined with the new (post-2020) event data
+to construct the master database.
+
+In the `create_db_tables` directory is an Excel workbook that uses [Power Query](https://learn.microsoft.com/en-us/power-query/power-query-what-is-power-query) to read the CSV files in `create_csv_new` and construct the master database as a set of relational, normalized data tables in the `db_tables_MASTER` directory.
 
 ## Corrections made to Competitor Points
 

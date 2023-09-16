@@ -262,10 +262,16 @@ def generateEventFiles():
             # Group by Role ID to get the Tier information for each Role
             gbRole = df1.groupby('Role ID')
             h = []
+            j = []
             for roleID, dfRole in gbRole:
-                [role, tier] = dfRole.iloc[0][['Role', 'Tier']]
+                [role, tier, numEntries] = dfRole.iloc[0][['Role', 'Tier', 'Num Entries']]
                 h.append(f"{role}&nbsp;&ndash;&nbsp;Tier&nbsp;{str(tier)}")
-            html += f'<h3>{division}&nbsp;&nbsp;<small>({", ".join(h)})</small></h3>'
+                if numEntries >= 0:
+                    j.append(f"{numEntries}/{role}")
+            if len(j) > 0:
+                html += f'<h3>{division}&nbsp;&nbsp;<small>({", ".join(h)})&nbsp;&nbsp;[{", ".join(j)}]</small></h3>'
+            else:
+                html += f'<h3>{division}&nbsp;&nbsp;<small>({", ".join(h)})</small></h3>'
 
             df1['Competitor Name'] = f'<a href="../competitors/c-' + \
                                      df1['Competitor ID'].astype(str) + \

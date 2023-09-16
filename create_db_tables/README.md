@@ -14,17 +14,28 @@ The tables should all be normalized with no data duplication among any tables.
 
 All tables have a numeric primary key ID. Most start at 1, with exceptions such as Competitor ID and Division ID.
 
-It should be obvious what datatype is used for each field: non-negative integer, text, or date.
+It should be obvious what datatype is used for each field: integer, text, or date.
 
 ### table_Competitors
 
 Contains the CTST-assigned Competitor ID for each competitor, along with their name. Used only in `table_Results`.
 
 - `Competitor ID` : Primary Key. Uniquely identifies a CTST Competitor.
-This is the actual number assigned to a Competitor by the CTST once the Competitor earns their first point (or has a Result entry in the database even if no points were awarded).
-The first assigned Competitor ID was 100. There are gaps in the Competitor ID assignments.
+This is the actual number assigned to a Competitor by the CTST once the Competitor earns their first point (or has a Result entry in the database even if no points were awarded). There are gaps in the Competitor ID assignments.
+Competitor IDs from the legacy points registry were used unchanged. Some Competitor IDs had to be created for Competitors who
+were mistakenly omitted from the legacy points registry.
+New Competitor IDs are assigned using PowerQuery within an Excel workbook in the `create_csv_new` directory for all new events.
 
-- `Competitor Name` : Competitor Name. Not referenced from other tables. Note that in some cases there may be competitors that have multiple Competitor IDs assigned for multiple variations of their name. Some work still needs to be done eliminating duplicate Competitor entries. One issue with this, however, is that some competitors have been signing up online through Country Dance Director, which maintains their CTST Competitor ID in their profile. Ideally, when eliminating a duplicate Competitor entry, it should not be the one they are currently using in their Country Dance Director profile.
+The following Competitor ID ranges currently exist:
+- 100 to 1319 : Numbers from original legacy points registry
+- 1400 to 1404 : Competitors missing from legacy events
+- 1500 to 1658 : Events from Aug 2021 to Aug 2023 (except for Texas Classic 2022)
+- 1700 to 1715 : Texas Classic 2022
+- 1800+ : Events after August 2023
+
+- `Competitor Name` : Competitor Name. Not referenced from other tables. Note that in some cases there may be Competitors that have had multiple Competitor IDs assigned for multiple variations of their name. Work has been done to eliminate duplicate Competitor entries.
+However, there may still be instances of Competitors with multiple IDs for different variations of their name.
+These may be addressed in the future if such cases come to light.
 
 ### table_Contests
 
@@ -48,7 +59,7 @@ A Contest is a combination of an Event (e.g., 2019 Colorado Country Classic), in
 
 - `Num Entries` : Number of contestants who competed (in ALL heats, not just the Finals). Not referenced from other tables.
 
-    The total number of leaders or followers who competed in this contest. For legacy data (2020 results and earlier), this value was not used and was set to zero, as the leader/follower counts were not available for all contests.
+    The total number of leaders or followers who competed in this contest. For legacy data (2020 results and earlier), this value was not used and was set to -1 (to indicate an undefined value), as the leader/follower counts were not available for all contests.
 
 - `Description` : Not presently used, but intended to add additional Contest information, e.g. can be used to indicate a combined-division contest, e.g., "Intermediate/Advanced", since for combined Contests, the Division ID in `table_Contests` will only be the lower of the two Divisions, i.e. the one in which points were awarded, and there is no other way in the database to denote a combined contest.
 
@@ -63,7 +74,9 @@ A Contest is a combination of an Event (e.g., 2019 Colorado Country Classic), in
     - `60` : Advanced
     - `70` : All-Stars
 
-- `Division` : Division Name. Note that because there have not yet been any "All-Stars" contests held so far, there may not yet be a table entry for "All-Stars".
+- `Division` : Division Name.
+
+Note that because there have not yet been any "All-Stars" contests held so far, there may not yet be a table entry for "All-Stars".
 
 ### table_EventLocations
 
@@ -95,7 +108,7 @@ Each time an event is held there will be a separate Event entry for the Event on
 
 ### table_Results
 
-The lowest level of detail in the Points database is the Result record. A Result record is required for each placement in the Final heat of any Contest in which points are awarded. A Result entry is not required if no points were awarded. However, there is nothing to preclude creating a Result entry for all competitors in the Final heat, or for contests in the non-pointed divisions (e.g., Masters), as long as the competitor is assigned a Competitor ID. The Points value assigned to a Result is determined by the data entry function, and is not automatically derived from the Result/Tier. This allows future changes to the points/tier levels without affecting existing points awarded.
+The lowest level of detail in the Points database is the Result record. A Result record is required for each placement in the Final heat of any Contest in which points are awarded. A Result entry is not required if no points were awarded. However, there is nothing to preclude creating a Result entry for all Competitors in the Final heat, or for Contests in the non-pointed divisions (e.g., Masters), as long as the Competitor is assigned a Competitor ID. The Points value assigned to a Result is determined by the data entry function, and is not automatically derived from the Result/Tier. This allows future changes to the points/tier levels without affecting existing points awarded.
 
 - `Result ID` : Primary Key. Uniquely identifies a result. Not used in other tables.
 
@@ -119,7 +132,7 @@ In the legacy Points Registry, each competitor was listed in EITHER the Men's OR
 
 `create_db_tables.xlsx` is an Excel workbook that uses [Power Query](https://learn.microsoft.com/en-us/power-query/power-query-what-is-power-query) to generate the database tables.
 
-This Excel workbook uses as its data source the CSV file, `points_MASTER.csv`, in the `create_csv_from_archive` directory, a combined file containing all Leader and Follower points data, both old and new contest data.
+This Excel workbook uses as its data source the CSV file, `points_latest.csv`, in the `create_csv_new` directory, a combined file containing all Leader and Follower points data, for both old and new contest data.
 
 To (re-)generate the Excel data tables for the database in the Excel workbook, update the Data Source, then re-run the Power Query queries:
 
@@ -127,11 +140,11 @@ To (re-)generate the Excel data tables for the database in the Excel workbook, u
 - If the message `SECURITY WARNING External Data Connections have been disabled` appears, click `Enable Content`
 - Navigate to `Data > Get Data v > Data Source Settings...`
 - Click `OK` to trust the source of the file
-- In the Data source settings dialog, click on the entry for the `points_MASTER.csv` file
+- In the Data source settings dialog, click on the entry for the `points_latest.csv` file
 - Click `Change Source...`
 - Select `Browse...` under File path
-- Navigate to the directory containing the `points_MASTER.csv` file
-- In the Import Data dialog, select the `points_MASTER.csv` file, then click `Import`, then `OK`, then `Close`
+- Navigate to the directory containing the `points_latest.csv` file
+- In the Import Data dialog, select the `points_latest.csv` file, then click `Import`, then `OK`, then `Close`
 - On the Data ribbon, click `Queries & Connections`, then, still on the Data ribbon, click `Refresh All v`
 - Wait for the data tables to finish loading on the Queries & Connections pane
 - Click `File` then `Save` to save the updated workbook
