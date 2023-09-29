@@ -35,7 +35,7 @@ df = pd.merge(df, dfCompetitors,    how="left", left_on="Competitor ID",        
 
 df['Year'] = df['Event Date'].dt.year
 
-htmlCompetitors =  '''<!DOCTYPE html>
+htmlTemplate = '''<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -43,65 +43,20 @@ htmlCompetitors =  '''<!DOCTYPE html>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#909090">
-<meta name="description" content="Country Two Step Tour (CTST) Points Database Search">
+<meta name="description" content="Country Two Step Tour (CTST) Points Registry">
 <link rel="apple-touch-icon-precomposed" href="../../apple-touch-icon-precomposed.png">
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
 <link rel="stylesheet" href="../../index.css">
 <link rel="manifest" href="../../manifest.webmanifest">
 <link rel="icon" type="image/png" sizes="32x32" href="../../icons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../../icons/favicon-16x16.png">
-<title>CTST &ndash; {competitorName}</title>
+<title>{title}</title>
 </head>
 <body>
 <div id="apple-mobile-web-app-status-bar"></div>
 <div id="content">
-<h2>{competitorName}  [{competitorID}] &mdash; {level}</h2>
-'''
-
-htmlEvents = '''<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#909090">
-<meta name="description" content="Country Two Step Tour (CTST) Points Database Search">
-<link rel="apple-touch-icon-precomposed" href="../../apple-touch-icon-precomposed.png">
-<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
-<link rel="stylesheet" href="../../index.css">
-<link rel="manifest" href="../../manifest.webmanifest">
-<link rel="icon" type="image/png" sizes="32x32" href="../../icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../../icons/favicon-16x16.png">
-<title>CTST &ndash; Event Details</title>
-</head>
-<body>
-<div id="apple-mobile-web-app-status-bar"></div>
-<div id="content">
-<h2>{eventTitle}</h2>
-'''
-
-htmlPoints = '''<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#909090">
-<meta name="description" content="Country Two Step Tour (CTST) Points Database Search">
-<link rel="apple-touch-icon-precomposed" href="../../apple-touch-icon-precomposed.png">
-<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
-<link rel="stylesheet" href="../../index.css">
-<link rel="manifest" href="../../manifest.webmanifest">
-<link rel="icon" type="image/png" sizes="32x32" href="../../icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../../icons/favicon-16x16.png">
-<title>CTST &ndash; {year} Points Leaders</title>
-</head>
-<body>
-<div id="apple-mobile-web-app-status-bar"></div>
-<div id="content">
-<h2>{year}&nbsp;Point Leaders</h2>
+<div id="home"><a href="../../" title="Back to Home Page">&#x2302;</a></div>
+<h2>{h2}</h2>
 '''
 
 #######################
@@ -189,7 +144,9 @@ def generateCompetitorFiles():
             level = 'Novice'
 
         # Header
-        html = htmlCompetitors.format(competitorName=competitorName, competitorID=competitorID, level=level)
+        title = f"CTST &ndash; {competitorName}"
+        h2 = f"{competitorName}  [{competitorID}] &mdash; {level}"
+        html = htmlTemplate.format(title=title, h2=h2)
 
         pointsByDivision = dfC.groupby(['Division ID', 'Division'], as_index=False)['Points'].sum()[['Division', 'Points']]
 
@@ -238,7 +195,11 @@ def generateCompetitorFiles():
 
 def generateEventFiles():
 
-    # Generate files for each event
+    # Generate files for each event, sorting within event by Division
+    # Division sort order is:
+    # Newcomer (10), Novice (40), Intermediate (50), Advanced (60), All-Stars (70),
+    # Sophisticated (20), Masters (30)
+    sortArr = np.array([10, 40, 50, 60, 70, 20, 30])
 
     gb = df.groupby('Event ID')
 
@@ -248,16 +209,27 @@ def generateEventFiles():
         [eventDate, eventName, eventLocation] = dfE.iloc[0][['Event Date', 'Event Name', 'Event Location']]
         dateString = eventDate.strftime('%d %b %Y').lstrip('0')
         eventTitle = f"{dateString} &mdash; {eventName}, {eventLocation}"
-        html = htmlEvents.format(eventTitle=eventTitle)
+
+        title = 'CTST &ndash; Event Details'
+        h2 = f"{eventTitle}"
+        html = htmlTemplate.format(title=title, h2=h2)
+
+        # Create a new column for the sort order initially using the Division ID as the sort order value
+        dfE['Sort Order'] = dfE['Division ID']
+
+        # Re-order the divisions using the index of the Division ID in sortArr (0-6) as the sort order
+        # If a division ID is not in sortArr, then just use the Division ID as the sort order
+        dfE['Sort Order'] = dfE['Sort Order'].map(lambda x: np.where(sortArr == x)[0][0] if x in sortArr else x)
 
         # Separate by Division, so that each Division's Tier can be displayed
-        gb1 = dfE.groupby('Division ID')
+        #gb1 = dfE.groupby('Division ID')
+        gb1 = dfE.groupby('Sort Order')
 
         for divisionID, df1 in gb1:
 
             division = df1.iloc[0]['Division']
 
-            df1['Competitor Name'] = df1['Competitor Name'].apply(reverseName)
+            df1.loc[:, 'Competitor Name'] = df1['Competitor Name'].apply(reverseName)
 
             # Group by Role ID to get the Tier information for each Role
             gbRole = df1.groupby('Role ID')
@@ -273,8 +245,8 @@ def generateEventFiles():
             else:
                 html += f'<h3>{division}&nbsp;&nbsp;<small>({", ".join(h)})</small></h3>'
 
-            df1['Competitor Name'] = f'<a href="../competitors/c-' + \
-                                     df1['Competitor ID'].astype(str) + \
+            df1.loc[:, 'Competitor Name'] = f'<a href="../competitors/c-' + \
+                                    df1['Competitor ID'].astype(str) + \
                                     '.html">' + df1['Competitor Name'] + '</a>'
 
             df2 = df1[['Role ID', 'Result', 'Division', 'Role', 'Competitor Name', 'Points']] \
@@ -368,7 +340,9 @@ def generatePointsFiles():
         dfMerged.replace(to_replace = 0, value = '', inplace=True)
 
         # Header
-        html = htmlPoints.format(year=year)
+        title = f"CTST &ndash; {year} Points Leaders"
+        h2 = f"{year}&nbsp;Point Leaders"
+        html = htmlTemplate.format(title=title, h2=h2)
 
         # Body
         html += dfMerged.to_html(col_space='2em', justify='left', index=True, border=0, render_links=True, escape=False)
