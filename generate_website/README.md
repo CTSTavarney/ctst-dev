@@ -9,7 +9,7 @@ The `www` directory contains static files (html, css, js, etc.), as well as a `w
 The `wwww/data` directory contains json index files for competitor, event, and points data,
 as well as individual html files with the details of each competitor, event, and points year.
 
-To create the web site data files in `www/data`, run the Python 3 script, `create_www_data.py`.
+To create the web site data files in `www/data`, run the Python script, `create_www_data.py` (requires **Python 3**).
 
 The script requires the [pandas](https://pandas.pydata.org/) and [numPy](https://numpy.org/) libraries to be installed.
 
