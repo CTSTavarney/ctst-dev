@@ -29,12 +29,6 @@ dfEvents                = pd.read_csv(dbDirectory / 'table_Events.csv',         
 dfResults               = pd.read_csv(dbDirectory / 'table_Results.csv',        index_col='Result ID')
 dfRoles                 = pd.read_csv(dbDirectory / 'table_Roles.csv',          index_col='Role ID')           
 
-# Swap a competitor's first and last name
-def reverseName(fullName):
-    wordList = fullName.rsplit(',', 1)
-    lastName = wordList.pop() if len(wordList) > 0 else ''
-    return (lastName.strip() + ' ' + ''.join(wordList)).strip()
-
 # Create a new Year column in the Events table
 dfEvents['Year'] = dfEvents['Event Date'].dt.year
 
@@ -42,7 +36,7 @@ dfEvents['Year'] = dfEvents['Event Date'].dt.year
 dfEvents = pd.merge(dfEvents, dfEventNames, how="left", left_on="Event Name ID", right_index=True)
 dfEvents = pd.merge(dfEvents, dfEventLocations, how="left", left_on="Event Location ID", right_index=True)
 
-# Merge events, divisions and roles into Contests table
+# Merge events, divisions, and roles into Contests table
 dfContests = pd.merge(dfContests, dfEvents, how="left", left_on="Event ID", right_index=True)
 dfContests = pd.merge(dfContests, dfDivisions, how="left", left_on="Division ID", right_index=True)
 dfContests = pd.merge(dfContests, dfRoles, how="left", left_on="Role ID", right_index=True)
@@ -50,7 +44,15 @@ dfContests = pd.merge(dfContests, dfRoles, how="left", left_on="Role ID", right_
 # Merge contests into the Results table
 dfResults = pd.merge(dfResults, dfContests, how="left", left_on="Contest ID", right_index=True)
 
-# Create an additional column in Competitors table for the reversed Competitor Name
+# Swap a competitor's first and last name
+# Make sure to split names on the LAST comma; everything after the last comma is the first name; the rest is the last name
+# This is because some last names contain two commas, e.g: "Falls, Jr., Richard", which becomes: "Richard Falls, Jr."
+def reverseName(fullName):
+    wordList = fullName.rsplit(',', 1)
+    firstName = wordList.pop() if len(wordList) > 0 else ''
+    return (firstName.strip() + ' ' + ''.join(wordList)).strip()
+
+# Create an additional column in Competitors table for the reversed Competitor Name (first name comes first)
 dfCompetitors['Name'] = dfCompetitors['Competitor Name'].map(reverseName)
 
 #
@@ -96,6 +98,7 @@ for competitorID, dfC in gb:
         levelName = 'Novice'
         level = 40
 
+    # Include the level name and number in each row of the Competitor's table
     dfCompetitors.at[competitorID, 'Level'] = level
     dfCompetitors.at[competitorID, 'Level Name'] = levelName
 
@@ -120,9 +123,9 @@ htmlTemplate = '''<!DOCTYPE html>
 <title>{title}</title>
 </head>
 <body>
-<div id="apple-mobile-web-app-status-bar"></div>
-<div id="content">
-<div id="home"><a href="../../" title="Back to Home Page">&#x2302;</a></div>
+<div id="appleMobileWebAppStatusBarId"></div>
+<div id="contentId">
+<div id="homeId"><a href="../../" title="Back to Home Page">&#x2302;</a></div>
 <h2>{h2}</h2>
 {content}
 </div>
@@ -135,10 +138,14 @@ htmlTemplate = '''<!DOCTYPE html>
 #######################
 
 # Competitors
+dfTop = pd.DataFrame(data={ 'v': ['LIST COMPETITORS & LEVELS ...'] }, index=[1])
+dfTop.index.names = ['k']
+
 dfC = dfCompetitors.sort_values('Competitor Name')
-dfC.index.names = ['k']
 dfC['v'] = dfC['Competitor Name'] + '  -  ' + dfC.index.astype(str)
-dfC['v'].to_json(competitorsIndexPath, orient="table")
+dfC.index.names = ['k']
+
+pd.concat([dfTop, dfC]).to_json(competitorsIndexPath, orient="table")
 
 # Events
 dfE = dfEvents.sort_values(by='Event Date', ascending=False)
@@ -163,16 +170,51 @@ pd.concat([dfTop, dfP]).to_json(pointsIndexPath, orient="table")
 
 def generateCompetitorFiles():
 
-    # Generate files for each competitor, derived from the expanded Results DataFrame
+    #
+    # Generate list of all competitors by last name with their CTST ID and Level
+    # --------------------------------------------------------------------------
+
+    # Reset the index (Competitor ID), so it can be used as a column
+    dfC = dfCompetitors.reset_index()
+
+    # Select the columns we need
+    dfC = dfC[['Competitor Name', 'Competitor ID', 'Level Name']]
+
+    # Order by Competitor Name (last name, first name)
+    dfC = dfC.sort_values(by=['Competitor Name'])
+
+    # Turn competitor names into links
+    dfC.loc[:, 'Competitor Name'] = f'<a href="../competitors/c-' + dfC['Competitor ID'].astype(str) + '.html">' + dfC['Competitor Name'] + '</a>'
+
+    # Shorten column names
+    dfC = dfC.rename(columns={'Competitor ID': 'ID', 'Level Name': 'Level'})
+
+    # Generate the html
+    title = f"CTST &ndash; Competitors Levels"
+    h2 = f"Competitors & Levels"
+    content = dfC.to_html(border=0, classes='tableColoredHeader tableInnerBorders tableStickyHeader', \
+                           col_space='1em', justify='left', index=False, render_links=True, escape=False)
+
+    html = htmlTemplate.format(title=title, h2=h2, content=content)
+
+    # Write the html file
+    with open(competitorsDirectory / f'c-1.html', 'w') as f:
+        f.write(html)
+
+    #
+    # Generate details pages for each individual competitor
+    # ------------------------------------------------------
+
     gb = df.groupby('Competitor ID')
 
     for competitorID, dfC in gb:
         # dfC is a DataFrame holding all result records for a given Competitor ID
 
         #
-        # Get the competitor's points by division
+        # Get the competitor's points by division, omitting divisions with no points
         #
-        pointsByDivision = dfC.groupby(['Division ID', 'Division'], as_index=False)['Points'].sum()[['Division', 'Points']]
+        dfP = dfC[dfC['Points'] > 0]
+        pointsByDivision = dfP.groupby(['Division ID', 'Division'], as_index=False)['Points'].sum()[['Division', 'Points']]
         content = '<div>' + pointsByDivision.to_html(border=0, classes='tableNoBorder', justify='left', index=False) + '</div>'
 
         #
@@ -198,7 +240,8 @@ def generateCompetitorFiles():
         dfC['Date'] = '<span style="float:left">' +  dfC['Event Date'].dt.strftime('%b') + '&nbsp;</span>' + \
                       '<span style="float:right">' + dfC['Event Date'].dt.strftime('%Y') + '</span>'
 
-        content += '<div>' + dfC.to_html(border=0, classes='tableNoBorder', justify='left', index=False, render_links=True, escape=False, \
+        content += '<div>' + dfC.to_html(border=0, classes='tableColoredHeader tableNoBorder', \
+                                         justify='left', index=False, render_links=True, escape=False, \
                                          columns=['Date', 'Event', 'Div', 'L/F', 'Res', 'Pts']) + '</div>'
 
         #
@@ -275,9 +318,7 @@ def generateEventFiles():
             else:
                 content += f'<h3>{division}&nbsp;&nbsp;<small>({", ".join(h)})</small></h3>'
 
-            df1.loc[:, 'Name'] = f'<a href="../competitors/c-' + \
-                                    df1['Competitor ID'].astype(str) + \
-                                    '.html">' + df1['Name'] + '</a>'
+            df1.loc[:, 'Name'] = f'<a href="../competitors/c-' + df1['Competitor ID'].astype(str) + '.html">' + df1['Name'] + '</a>'
 
             df2 = df1[['Role ID', 'Result', 'Division', 'Role', 'Name', 'Points']].sort_values(by=['Result', 'Role ID'])
 
@@ -287,9 +328,13 @@ def generateEventFiles():
             df3 = df2.pivot_table(index=['Result'], columns='Role', values=['Competitor Name', 'Points'], fill_value='N/A', \
                     aggfunc={'Competitor Name': lambda x:x, 'Points': lambda x:x}, sort=False)
 
+            df3 = df3.reset_index()
+            df3 = df3.rename(columns={'Result': ''})
+
             # Event Contests
-            content += df3.to_html(border=0, classes='tableIn1Out2Borders', \
-                                   col_space='2em', justify='left', index=True, render_links=True, escape=False, float_format='{:.0f}'.format)
+            content += df3.to_html(border=0, classes='tableColoredHeader tableInnerBorders', \
+                                   col_space='1.5em', justify='left', index=False, index_names=False, render_links=True, escape=False, \
+                                   float_format='{:.0f}'.format)
 
             # Remove non-compliant html
             content = content.replace(' halign="left"', '')
@@ -332,7 +377,7 @@ def roleIdToName(roleId):
 #
 # Get points rankings by role for the specified DataFrame (may be for all years, or for a single year)
 #
-def getRoleYearRankings(dfIn, limit = 0):
+def getRoleYearRankings(dfIn, includeRanks = True, limit = 0):
 
     # Create a GroupBy object containing a list of DataFrames, one for each Role ID
     gbRole = dfIn.groupby('Role ID')
@@ -340,7 +385,7 @@ def getRoleYearRankings(dfIn, limit = 0):
     # List of the resulting DataFrames for each Role
     listDf = []
 
-    # Process each Role's DataFrame; 1st iteration for Leaders, 2nd iteration for Followers
+    # Process each Role's DataFrame: 1st iteration for Leaders, 2nd iteration for Followers
     for roleId, dfRole in gbRole:
         # Get the total number of points for each competitor
         dfP = dfRole.groupby(['Competitor ID']).sum('Points')
@@ -369,11 +414,15 @@ def getRoleYearRankings(dfIn, limit = 0):
 
         nameCol = roleIdToName(roleId)
 
-        # The columns we need are: Rank, Competitor Name, Points
-        dfP = dfP[['Rank', 'Name', 'Points']]
-
-        # Shorten column names for use on small screens
-        dfP = dfP.rename(columns={'Rank': '', 'Name': nameCol, 'Points': 'Pts'})
+        # Only include the Rank column if requested
+        if includeRanks:
+            dfP = dfP[['Rank', 'Name', 'Points']]
+            # Shorten column names for use on small screens
+            dfP = dfP.rename(columns={'Rank': '', 'Name': nameCol, 'Points': 'Pts'})
+        else:
+            dfP = dfP[['Name', 'Points']]
+            # Shorten column names for use on small screens
+            dfP = dfP.rename(columns={'Name': nameCol, 'Points': 'Pts'})
 
         # Add to the list of DataFrames that will be concatenated
         listDf.append(dfP)
@@ -419,7 +468,7 @@ def getDivisionRankings(dfIn):
     col = dfP.pop('Name')
     dfP.insert(0, col.name, col)
 
-    # Remove the 'Competitor Name' column (we only need the 'Name' column, the reversed competitor name)
+    # Remove the 'Competitor Name' column (we only need the 'Name' column,)
     dfP = dfP.drop(columns=['Competitor Name'])
 
     # Remove the 'Level Name' column (we only need the 'Level' column, the abbreviated level name)
@@ -464,8 +513,8 @@ def generateRankingsFiles():
 
     # Generate the html
     title = f"CTST &ndash; Overall Point Rankings"
-    h2 = f"Overall Point Rankings (Leaders/Followers)"
-    content = dfLF.to_html(border=0, classes='tableIn1Out1Borders stickyTableHeader', \
+    h2 = f"Overall Point Rankings"
+    content = dfLF.to_html(border=0, classes='tableColoredHeader tableInnerBorders tableStickyHeader', \
                            col_space='1em', justify='left', index=False, render_links=True, escape=False)
 
     html = htmlTemplate.format(title=title, h2=h2, content=content)
@@ -484,7 +533,7 @@ def generateRankingsFiles():
     # Generate the html
     title = f"CTST &ndash; Overall Division Rankings"
     h2 = f"Overall Division Rankings"
-    content = dfLF.to_html(border=0, classes='tableIn1Out1Borders stickyTableHeader', \
+    content = dfLF.to_html(border=0, classes='tableColoredHeader tableInnerBorders tableStickyHeader', \
                            col_space='1em', justify='left', index=False, render_links=True, escape=False)
 
     html = htmlTemplate.format(title=title, h2=h2, content=content)
@@ -501,12 +550,12 @@ def generateRankingsFiles():
 
     for year, dfYear in gb:
         # Get rankings for each year
-        dfLF = getRoleYearRankings(dfYear, 10)
+        dfLF = getRoleYearRankings(dfYear, False, 10)
 
         # Generate the html
         title = f"CTST &ndash; {year} Point Rankings"
-        h2 = f"{year}&nbsp;Point Rankings (Leaders/Followers)"
-        content = dfLF.to_html(border=0, classes='tableIn1Out1Borders', \
+        h2 = f"{year}&nbsp;Point Rankings"
+        content = dfLF.to_html(border=0, classes='tableColoredHeader tableInnerBorders', \
                                col_space='1em', justify='left', index=False, render_links=True, escape=False)
         html = htmlTemplate.format(title=title, h2=h2, content=content)
 

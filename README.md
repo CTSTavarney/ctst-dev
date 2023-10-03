@@ -1,4 +1,4 @@
-# Country Two Step Tour (CTST) Points Database
+# Country Two Step Tour (CTST) Points Registry
 
 This project provides a searchable database/web site containing up-to-date CTST Points Registry data. For now, the web site is hosted on GitHub Pages at: https://ctstpoints.github.io/
 
@@ -11,7 +11,7 @@ as new Contest result data has been obtained for each Event.
 as the data provided to the CTST from the respective event directors.**
 
 This is the development repository, https://github.com/ctstpoints/ctst-dev. Other GitHub repositories are used to host web sites on GitHub Pages:
-- https://github.com/ctstpoints/ctstpoints.github.io -- This Points Database web site
+- https://github.com/ctstpoints/ctstpoints.github.io -- This Points Registry web site
 - https://github.com/ctstpoints/ctst-archive  -- An archived copy of the legacy `countrytwosteptour.com` web site
 
 Summary of steps involved in creating the project:
