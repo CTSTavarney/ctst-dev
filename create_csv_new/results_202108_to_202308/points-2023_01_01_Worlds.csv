@@ -1,51 +1,51 @@
-Role,Competitor Name,Competitor ID,Event Date,Event Name,Event Location,Division,Result,Points,Num Entries
-L,"Frankenberry, Chaz",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,1,10,15
-L,"Liberman, Jonno",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,2,8,15
-L,"Pilato, Avi",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,3,6,15
-L,"Harris, Zachary",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,4,4,15
-L,"Verdonk, Roy",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,5,2,15
-L,"Blum, Evan",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,6,1,15
-L,"Rodriguez, Juan",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,7,1,15
-L,"Bal, David",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,8,1,15
-L,"Bartlett, Joel",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,9,1,15
-L,"Waugh, David",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,10,1,15
-F,"Keister, Mackenzie",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,1,10,30
-F,"Kahn, Eva",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,2,8,30
-F,"Riley, Cora",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,3,6,30
-F,"Hockett, Audreyann",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,4,4,30
-F,"Reeder, Anna",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,5,2,30
-F,"Martino, Isabella",1204,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,6,1,30
-F,"Nuno, Adia",1307,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,7,1,30
-F,"Karolczuk, Katie",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,8,1,30
-F,"Allen, Aimee",504,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,9,1,30
-F,"Martinez, Becky",1079,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,10,1,30
-L,"Charlesworth, John",1185,1/1/2023,UCWDC World's,"Phoenix, AZ",Intermediate,1,0,4
-L,"Morland, Doug",594,1/1/2023,UCWDC World's,"Phoenix, AZ",Intermediate,2,0,4
-L,"Devereux, Thomas",1111,1/1/2023,UCWDC World's,"Phoenix, AZ",Intermediate,3,0,4
-F,"Casazza, Kristina",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Intermediate,1,5,7
-F,"Mahan, Arianna",879,1/1/2023,UCWDC World's,"Phoenix, AZ",Intermediate,2,4,7
-F,"Dohogne, Ileana",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Intermediate,3,3,7
-L,"Quinones, Sebastian",1021,1/1/2023,UCWDC World's,"Phoenix, AZ",Advanced,1,5,5
-L,"Ingenthron, Rob",453,1/1/2023,UCWDC World's,"Phoenix, AZ",Advanced,2,4,5
-L,"Brummett, Jesse",966,1/1/2023,UCWDC World's,"Phoenix, AZ",Advanced,3,3,5
-L,"Thompson, Joe",931,1/1/2023,UCWDC World's,"Phoenix, AZ",Advanced,4,2,5
-F,"Lundahl, Joan",119,1/1/2023,UCWDC World's,"Phoenix, AZ",Advanced,1,5,8
-F,"Bussen, Alayna",479,1/1/2023,UCWDC World's,"Phoenix, AZ",Advanced,2,4,8
-F,"Skredsvig, Haley",176,1/1/2023,UCWDC World's,"Phoenix, AZ",Advanced,3,3,8
-F,"Bryan, Angie",170,1/1/2023,UCWDC World's,"Phoenix, AZ",Advanced,4,2,8
-L,"Ingenthron, Rob",453,1/1/2023,UCWDC World's,"Phoenix, AZ",Sophisticated,1,0,4
-L,"Verdonk, Roy",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Sophisticated,2,0,4
-L,"Cauthen, James",164,1/1/2023,UCWDC World's,"Phoenix, AZ",Sophisticated,3,0,4
-L,"Bal, David",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Sophisticated,4,0,4
-F,"Brown, Cheryl",825,1/1/2023,UCWDC World's,"Phoenix, AZ",Sophisticated,1,0,10
-F,"Martinez, Becky",1079,1/1/2023,UCWDC World's,"Phoenix, AZ",Sophisticated,2,0,10
-F,"Dickinson, Ashlee",674,1/1/2023,UCWDC World's,"Phoenix, AZ",Sophisticated,3,0,10
-F,"Lundahl, Joan",119,1/1/2023,UCWDC World's,"Phoenix, AZ",Sophisticated,4,0,10
-L,"Ingenthron, Rob",453,1/1/2023,UCWDC World's,"Phoenix, AZ",Masters,1,0,4
-L,"Cauthen, James",164,1/1/2023,UCWDC World's,"Phoenix, AZ",Masters,2,0,4
-L,"Kashack, Gene",930,1/1/2023,UCWDC World's,"Phoenix, AZ",Masters,3,0,4
-L,"Waugh, David",99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Masters,4,0,4
-F,"Williams, Jasmine",922,1/1/2023,UCWDC World's,"Phoenix, AZ",Masters,1,0,7
-F,"Halladay, Mindy",274,1/1/2023,UCWDC World's,"Phoenix, AZ",Masters,2,0,7
-F,"Lundahl, Joan",119,1/1/2023,UCWDC World's,"Phoenix, AZ",Masters,3,0,7
-F,"Brown, Cheryl",825,1/1/2023,UCWDC World's,"Phoenix, AZ",Masters,4,0,7
+Role,Last Name,First Name,Competitor ID,Event Date,Event Name,Event Location,Division,Result,Points,Num Entries
+L,Frankenberry,Chaz,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,1,10,15
+L,Liberman,Jonno,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,2,8,15
+L,Pilato,Avi,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,3,6,15
+L,Harris,Zachary,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,4,4,15
+L,Verdonk,Roy,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,5,2,15
+L,Blum,Evan,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,6,1,15
+L,Rodriguez,Juan,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,7,1,15
+L,Bal,David,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,8,1,15
+L,Bartlett,Joel,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,9,1,15
+L,Waugh,David,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,10,1,15
+F,Keister,Mackenzie,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,1,10,30
+F,Kahn,Eva,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,2,8,30
+F,Riley,Cora,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,3,6,30
+F,Hockett,Audreyann,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,4,4,30
+F,Reeder,Anna,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,5,2,30
+F,Martino,Isabella,1204,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,6,1,30
+F,Nuno,Adia,1307,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,7,1,30
+F,Karolczuk,Katie,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,8,1,30
+F,Allen,Aimee,504,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,9,1,30
+F,Martinez,Becky,1079,1/1/2023,UCWDC World's,"Phoenix, AZ",Novice,10,1,30
+L,Charlesworth,John,1185,1/1/2023,UCWDC World's,"Phoenix, AZ",Intermediate,1,0,4
+L,Morland,Doug,594,1/1/2023,UCWDC World's,"Phoenix, AZ",Intermediate,2,0,4
+L,Devereux,Thomas,1111,1/1/2023,UCWDC World's,"Phoenix, AZ",Intermediate,3,0,4
+F,Casazza,Kristina,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Intermediate,1,5,7
+F,Mahan,Arianna,879,1/1/2023,UCWDC World's,"Phoenix, AZ",Intermediate,2,4,7
+F,Dohogne,Ileana,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Intermediate,3,3,7
+L,Quinones,Sebastian,1021,1/1/2023,UCWDC World's,"Phoenix, AZ",Advanced,1,5,5
+L,Ingenthron,Rob,453,1/1/2023,UCWDC World's,"Phoenix, AZ",Advanced,2,4,5
+L,Brummett,Jesse,966,1/1/2023,UCWDC World's,"Phoenix, AZ",Advanced,3,3,5
+L,Thompson,Joe,931,1/1/2023,UCWDC World's,"Phoenix, AZ",Advanced,4,2,5
+F,Lundahl,Joan,119,1/1/2023,UCWDC World's,"Phoenix, AZ",Advanced,1,5,8
+F,Bussen,Alayna,479,1/1/2023,UCWDC World's,"Phoenix, AZ",Advanced,2,4,8
+F,Skredsvig,Haley,176,1/1/2023,UCWDC World's,"Phoenix, AZ",Advanced,3,3,8
+F,Bryan,Angie,170,1/1/2023,UCWDC World's,"Phoenix, AZ",Advanced,4,2,8
+L,Ingenthron,Rob,453,1/1/2023,UCWDC World's,"Phoenix, AZ",Sophisticated,1,0,4
+L,Verdonk,Roy,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Sophisticated,2,0,4
+L,Cauthen,James,164,1/1/2023,UCWDC World's,"Phoenix, AZ",Sophisticated,3,0,4
+L,Bal,David,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Sophisticated,4,0,4
+F,Brown,Cheryl,825,1/1/2023,UCWDC World's,"Phoenix, AZ",Sophisticated,1,0,10
+F,Martinez,Becky,1079,1/1/2023,UCWDC World's,"Phoenix, AZ",Sophisticated,2,0,10
+F,Dickinson,Ashlee,674,1/1/2023,UCWDC World's,"Phoenix, AZ",Sophisticated,3,0,10
+F,Lundahl,Joan,119,1/1/2023,UCWDC World's,"Phoenix, AZ",Sophisticated,4,0,10
+L,Ingenthron,Rob,453,1/1/2023,UCWDC World's,"Phoenix, AZ",Masters,1,0,4
+L,Cauthen,James,164,1/1/2023,UCWDC World's,"Phoenix, AZ",Masters,2,0,4
+L,Kashack,Gene,930,1/1/2023,UCWDC World's,"Phoenix, AZ",Masters,3,0,4
+L,Waugh,David,99999,1/1/2023,UCWDC World's,"Phoenix, AZ",Masters,4,0,4
+F,Williams,Jasmine,922,1/1/2023,UCWDC World's,"Phoenix, AZ",Masters,1,0,7
+F,Halladay,Mindy,274,1/1/2023,UCWDC World's,"Phoenix, AZ",Masters,2,0,7
+F,Lundahl,Joan,119,1/1/2023,UCWDC World's,"Phoenix, AZ",Masters,3,0,7
+F,Brown,Cheryl,825,1/1/2023,UCWDC World's,"Phoenix, AZ",Masters,4,0,7

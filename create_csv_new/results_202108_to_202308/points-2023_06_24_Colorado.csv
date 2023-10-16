@@ -1,23 +1,23 @@
-Role,Competitor Name,Competitor ID,Event Date,Event Name,Event Location,Division,Result,Points,Num Entries
-L,"Anderson, JT",99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,1,5,11
-L,"Sumpter, Tasha",596,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,2,4,11
-L,"Tucker, Brent",99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,3,3,11
-L,"Guillory, Kyle",1242,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,4,2,11
-L,"Bal, David",99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,5,1,11
-L,"Bryan, Angie",170,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,6,0,11
-L,"Harris, Matthew",99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,7,0,11
-L,"Myers, Emily",99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,8,0,11
-L,"Sugg, Eric",99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,9,0,11
-L,"Hamilton, Spencer",99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,10,0,11
-L,"Cogswell, Jared",99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,11,0,11
-F,"Tafoya, Nikki",99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,1,5,11
-F,"Parker, Rebecca",99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,2,4,11
-F,"King, Molly",99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,3,3,11
-F,"Pickard, Bethany",99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,4,2,11
-F,"Koch, Laura",99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,5,1,11
-F,"Perry, Lynne",99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,6,0,11
-F,"Spriggs, Emily",99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,7,0,11
-F,"Burger, Ruth",99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,8,0,11
-F,"Hoffner, DeLene",1193,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,9,0,11
-F,"Grothe, Kathy",158,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,10,0,11
-F,"Mignola, Debra",99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,11,0,11
+Role,Last Name,First Name,Competitor ID,Event Date,Event Name,Event Location,Division,Result,Points,Num Entries
+L,Anderson,JT,99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,1,5,11
+L,Sumpter,Tasha,596,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,2,4,11
+L,Tucker,Brent,99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,3,3,11
+L,Guillory,Kyle,1242,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,4,2,11
+L,Bal,David,99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,5,1,11
+L,Bryan,Angie,170,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,6,0,11
+L,Harris,Matthew,99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,7,0,11
+L,Myers,Emily,99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,8,0,11
+L,Sugg,Eric,99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,9,0,11
+L,Hamilton,Spencer,99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,10,0,11
+L,Cogswell,Jared,99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,11,0,11
+F,Tafoya,Nikki,99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,1,5,11
+F,Parker,Rebecca,99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,2,4,11
+F,King,Molly,99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,3,3,11
+F,Pickard,Bethany,99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,4,2,11
+F,Koch,Laura,99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,5,1,11
+F,Perry,Lynne,99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,6,0,11
+F,Spriggs,Emily,99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,7,0,11
+F,Burger,Ruth,99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,8,0,11
+F,Hoffner,DeLene,1193,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,9,0,11
+F,Grothe,Kathy,158,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,10,0,11
+F,Mignola,Debra,99999,6/24/2023,Colorado Country Classic,"Denver, CO",Novice,11,0,11

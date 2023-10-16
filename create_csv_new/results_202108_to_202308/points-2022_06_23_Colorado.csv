@@ -1,35 +1,35 @@
-Role,Competitor Name,Competitor ID,Event Date,Event Name,Event Location,Division,Result,Points,Num Entries
-L,"Greer, Rocky",1310,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,1,5,9
-L,"Bridge, Benjamin",1189,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,2,4,9
-L,"Bussen, Alayna",479,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,3,3,9
-L,"Mincer, Anthony",99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,4,2,9
-L,"Bal, David",99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,5,1,9
-L,"Czechowski, Richard",444,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,6,0,9
-L,"Webb, Eli",99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,7,0,9
-L,"Stepenaski, Paul",312,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,8,0,9
-L,"Webb, Bradley",99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,9,0,9
-F,"Katanski, Sofia",99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,1,10,18
-F,"Lorenz, Souraya",1318,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,2,8,18
-F,"Korver, Jenna",1221,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,3,6,18
-F,"Chilcote, Abi",99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,4,4,18
-F,"Patrick, Holly",99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,5,2,18
-F,"McMichael, Cindy",99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,6,1,18
-F,"Greer, Haley",99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,7,1,18
-F,"Decker, Chanel",1274,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,8,1,18
-F,"Denue, Jamie",1234,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,9,1,18
-L,"Bradchulis, Russ",887,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,1,5,6
-L,"Mullins, Jake",99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,2,4,6
-L,"Brummett, Jesse",966,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,3,3,6
-L,"Richards, Brad",142,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,4,2,6
-L,"Charlesworth, John",1185,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,5,1,6
-L,"Halladay, Ed",146,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,6,0,6
-F,"Grothe, Kathy",158,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,1,5,6
-F,"Bussen, Alayna",479,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,2,4,6
-F,"Halladay, Mindy",274,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,3,3,6
-F,"Lancelotta, Sheila",392,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,4,2,6
-F,"Dohogne, Ileana",99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,5,1,6
-F,"Babione, Jennifer",399,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,6,0,6
-L,"Ingenthron, Rob",453,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Masters,1,0,2
-L,"Halladay, Ed",146,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Masters,2,0,2
-F,"Grothe, Kathy",158,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Masters,1,0,2
-F,"Babione, Jennifer",399,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Masters,2,0,2
+Role,Last Name,First Name,Competitor ID,Event Date,Event Name,Event Location,Division,Result,Points,Num Entries
+L,Greer,Rocky,1310,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,1,5,9
+L,Bridge,Benjamin,1189,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,2,4,9
+L,Bussen,Alayna,479,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,3,3,9
+L,Mincer,Anthony,99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,4,2,9
+L,Bal,David,99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,5,1,9
+L,Czechowski,Richard,444,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,6,0,9
+L,Webb,Eli,99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,7,0,9
+L,Stepenaski,Paul,312,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,8,0,9
+L,Webb,Bradley,99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,9,0,9
+F,Katanski,Sofia,99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,1,10,18
+F,Lorenz,Souraya,1318,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,2,8,18
+F,Korver,Jenna,1221,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,3,6,18
+F,Chilcote,Abi,99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,4,4,18
+F,Patrick,Holly,99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,5,2,18
+F,McMichael,Cindy,99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,6,1,18
+F,Greer,Haley,99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,7,1,18
+F,Decker,Chanel,1274,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,8,1,18
+F,Denue,Jamie,1234,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Novice,9,1,18
+L,Bradchulis,Russ,887,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,1,5,6
+L,Mullins,Jake,99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,2,4,6
+L,Brummett,Jesse,966,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,3,3,6
+L,Richards,Brad,142,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,4,2,6
+L,Charlesworth,John,1185,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,5,1,6
+L,Halladay,Ed,146,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,6,0,6
+F,Grothe,Kathy,158,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,1,5,6
+F,Bussen,Alayna,479,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,2,4,6
+F,Halladay,Mindy,274,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,3,3,6
+F,Lancelotta,Sheila,392,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,4,2,6
+F,Dohogne,Ileana,99999,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,5,1,6
+F,Babione,Jennifer,399,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Intermediate,6,0,6
+L,Ingenthron,Rob,453,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Masters,1,0,2
+L,Halladay,Ed,146,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Masters,2,0,2
+F,Grothe,Kathy,158,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Masters,1,0,2
+F,Babione,Jennifer,399,6/23/2022,Colorado Country Classic,"Colorado Springs, CO",Masters,2,0,2

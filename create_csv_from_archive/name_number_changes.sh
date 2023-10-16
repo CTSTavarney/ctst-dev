@@ -11,8 +11,8 @@ sed -i -E '/Deverux/ s/1200/1111/' ${CSV_FILE}
 sed -i -E 's/Deverux/Devereux/' ${CSV_FILE}
 
 # Change P.J. Turner [541] to PJ Turner [1319]
-sed -i -E '/Turner, P\.J\./ s/541/1319/' ${CSV_FILE}
-sed -i -E 's/Turner, P\.J\./Turner, PJ/' ${CSV_FILE}
+sed -i -E '/Turner.*P\.J\./ s/541/1319/' ${CSV_FILE}
+sed -i -E 's/P\.J\./PJ/' ${CSV_FILE}
 
 #
 # Name changes/corrections:
@@ -40,16 +40,16 @@ sed -i -E '/\b454\b/ s/Lucia-DeGeorge/Lucia/' ${CSV_FILE}
 sed -i -E '/\b176\b/ s/Miller-Skredsvig/Skredsvig/' ${CSV_FILE}
 
 # Change Kristina Perez [519] to Kristina Perez-Banda [519]
-sed -i -E '/\b519\b/ s/Perez,/Perez-Banda,/' ${CSV_FILE}
+sed -i -E '/\b519\b/ s/Perez"/Perez-Banda"/' ${CSV_FILE}
 
 # Change Ashlee Reynolds [674] to Ashlee Dickinson [674]
 sed -i -E '/674\b/ s/Reynolds/Dickinson/' ${CSV_FILE}
 
 # Change Corinne Satterthwait [1304] to Corinne Satterthwaite [1304]
-sed -i -E '/1304\b/ s/Satterthwait,/Satterthwaite,/' ${CSV_FILE}
+sed -i -E '/1304\b/ s/Satterthwait"/Satterthwaite"/' ${CSV_FILE}
 
 # Change Stacy Thorp [1402] to Stacy Thorpe [1402]
-sed -i -E '/\b1402\b/ s/Thorp,/Thorpe,/' ${CSV_FILE}
+sed -i -E '/\b1402\b/ s/Thorp"/Thorpe"/' ${CSV_FILE}
 
 # Change Cheryl Williams [825] to Cheryl Brown [825]
 sed -i -E '/\b825\b/ s/Williams/Brown/' ${CSV_FILE}

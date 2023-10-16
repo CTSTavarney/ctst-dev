@@ -1,29 +1,29 @@
-Role,Competitor Name,Competitor ID,Event Date,Event Name,Event Location,Division,Result,Points,Num Entries
-L,"Grothman, Karl",1280,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,1,5,6
-L,"Bussen, Alayna",479,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,2,4,6
-L,"Welch, Russell",1245,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,3,3,6
-L,"Southernwood, Katrina",1401,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,4,2,6
-L,"Lambe, Travis",99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,5,1,6
-L,"Pollock, Michael",553,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,6,0,6
-F,"Wright, Teresa",828,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,1,5,6
-F,"Gustafson, Shaylene",99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,2,4,6
-F,"Bennett, Angie",99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,3,3,6
-F,"Desrosiers, Annie",99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,4,2,6
-F,"Bannick, Pamela",99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,5,1,6
-F,"Denue, Jamie",1234,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,6,0,6
-L,"Watmough, Albert",99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,1,0,4
-L,"Watmough, Albert",99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,2,0,4
-L,"Newsom, Luke",99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,3,0,4
-L,"Norman, Perry",941,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,4,0,4
-L,"Newsom, Luke",99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,5,0,4
-L,"Tolksdorff, David",171,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,6,0,4
-L,"Tolksdorff, David",171,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,7,0,4
-L,"Norman, Perry",941,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,8,0,4
-F,"Watson, Laura",1236,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,1,5,8
-F,"Lamarche, Courtney",1046,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,2,4,8
-F,"Bussen, Alayna",479,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,3,3,8
-F,"Houwers, Claudia",187,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,4,2,8
-F,"Olson, Brenda",99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,5,1,8
-F,"Sweetland, Coralee",760,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,6,0,8
-F,"Smith, Dalayce",99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,7,0,8
-F,"Muller, Elaine",99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,8,0,8
+Role,Last Name,First Name,Competitor ID,Event Date,Event Name,Event Location,Division,Result,Points,Num Entries
+L,Grothman,Karl,1280,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,1,5,6
+L,Bussen,Alayna,479,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,2,4,6
+L,Welch,Russell,1245,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,3,3,6
+L,Southernwood,Katrina,1401,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,4,2,6
+L,Lambe,Travis,99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,5,1,6
+L,Pollock,Michael,553,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,6,0,6
+F,Wright,Teresa,828,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,1,5,6
+F,Gustafson,Shaylene,99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,2,4,6
+F,Bennett,Angie,99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,3,3,6
+F,Desrosiers,Annie,99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,4,2,6
+F,Bannick,Pamela,99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,5,1,6
+F,Denue,Jamie,1234,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Novice,6,0,6
+L,Watmough,Albert,99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,1,0,4
+L,Watmough,Albert,99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,2,0,4
+L,Newsom,Luke,99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,3,0,4
+L,Norman,Perry,941,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,4,0,4
+L,Newsom,Luke,99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,5,0,4
+L,Tolksdorff,David,171,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,6,0,4
+L,Tolksdorff,David,171,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,7,0,4
+L,Norman,Perry,941,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,8,0,4
+F,Watson,Laura,1236,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,1,5,8
+F,Lamarche,Courtney,1046,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,2,4,8
+F,Bussen,Alayna,479,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,3,3,8
+F,Houwers,Claudia,187,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,4,2,8
+F,Olson,Brenda,99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,5,1,8
+F,Sweetland,Coralee,760,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,6,0,8
+F,Smith,Dalayce,99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,7,0,8
+F,Muller,Elaine,99999,4/7/2022,Calgary Dance Stampede,"Calgary, AB",Intermediate,8,0,8

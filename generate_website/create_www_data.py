@@ -44,16 +44,14 @@ dfContests = pd.merge(dfContests, dfRoles, how="left", left_on="Role ID", right_
 # Merge contests into the Results table
 dfResults = pd.merge(dfResults, dfContests, how="left", left_on="Contest ID", right_index=True)
 
-# Swap a competitor's first and last name
-# Make sure to split names on the LAST comma; everything after the last comma is the first name; the rest is the last name
-# This is because some last names contain two commas, e.g: "Falls, Jr., Richard", which becomes: "Richard Falls, Jr."
-def reverseName(fullName):
-    wordList = fullName.rsplit(',', 1)
-    firstName = wordList.pop() if len(wordList) > 0 else ''
-    return (firstName.strip() + ' ' + ''.join(wordList)).strip()
+# Create additional columns in the Competitors table for the full name:
+# LastFirstName -> Last Name ", " First Name
+# FirstLastName -> First Name " " Last Name
+dfCompetitors['LastFirstName'] = dfCompetitors['Last Name'] + ', ' + dfCompetitors['First Name']
+dfCompetitors['FirstLastName'] = dfCompetitors['First Name'] + ' ' + dfCompetitors['Last Name']
 
-# Create an additional column in Competitors table for the reversed Competitor Name (first name comes first)
-dfCompetitors['Name'] = dfCompetitors['Competitor Name'].map(reverseName)
+# No longer need individual first and last name columns
+dfCompetitors = dfCompetitors.drop(columns=['Last Name', 'First Name'])
 
 #
 # Calcluate the competitor levels
@@ -102,7 +100,7 @@ for competitorID, dfC in gb:
     dfCompetitors.at[competitorID, 'Level'] = level
     dfCompetitors.at[competitorID, 'Level Name'] = levelName
 
-# Merge the competitors data into the Results table, which will now be fully expanded
+# Merge the competitors data into the Results table, which will now be fully merged
 df = pd.merge(dfResults, dfCompetitors, how="left", left_on="Competitor ID", right_index=True)
 
 htmlTemplate = '''<!DOCTYPE html>
@@ -138,14 +136,14 @@ htmlTemplate = '''<!DOCTYPE html>
 #######################
 
 # Competitors
-dfTop = pd.DataFrame(data={ 'v': ['LIST COMPETITORS & LEVELS ...'] }, index=[1])
+dfTop = pd.DataFrame(data={ 'v': ['LIST OF COMPETITORS & LEVELS -->'] }, index=[1])
 dfTop.index.names = ['k']
 
-dfC = dfCompetitors.sort_values('Competitor Name')
-dfC['v'] = dfC['Competitor Name'] + '  -  ' + dfC.index.astype(str)
+dfC = dfCompetitors.sort_values('LastFirstName')
+dfC['v'] = dfC['LastFirstName'] + '  -  ' + dfC.index.astype(str)
 dfC.index.names = ['k']
 
-pd.concat([dfTop, dfC]).to_json(competitorsIndexPath, orient="table")
+pd.concat([dfTop, dfC])['v'].to_json(competitorsIndexPath, orient="table")
 
 # Events
 dfE = dfEvents.sort_values(by='Event Date', ascending=False)
@@ -162,7 +160,7 @@ titles = [ str(y) + ' Point Rankings' for y in years ]
 dfP = pd.DataFrame(data={ 'v': titles }, index=years)
 dfP.index.names = ['k']
 
-pd.concat([dfTop, dfP]).to_json(pointsIndexPath, orient="table")
+pd.concat([dfTop, dfP])['v'].to_json(pointsIndexPath, orient="table")
 
 #############################
 # Generate Competitor Files
@@ -178,20 +176,20 @@ def generateCompetitorFiles():
     dfC = dfCompetitors.reset_index()
 
     # Select the columns we need
-    dfC = dfC[['Competitor Name', 'Competitor ID', 'Level Name']]
+    dfC = dfC[['LastFirstName', 'Competitor ID', 'Level Name']]
 
     # Order by Competitor Name (last name, first name)
-    dfC = dfC.sort_values(by=['Competitor Name'])
+    dfC = dfC.sort_values(by=['LastFirstName'])
 
     # Turn competitor names into links
-    dfC.loc[:, 'Competitor Name'] = f'<a href="../competitors/c-' + dfC['Competitor ID'].astype(str) + '.html">' + dfC['Competitor Name'] + '</a>'
+    dfC.loc[:, 'LastFirstName'] = f'<a href="../competitors/c-' + dfC['Competitor ID'].astype(str) + '.html">' + dfC['LastFirstName'] + '</a>'
 
     # Shorten column names
-    dfC = dfC.rename(columns={'Competitor ID': 'ID', 'Level Name': 'Level'})
+    dfC = dfC.rename(columns={'Competitor ID': 'ID', 'LastFirstName': 'Competitor Name', 'Level Name': 'Level'})
 
     # Generate the html
-    title = f"CTST &ndash; Competitors Levels"
-    h2 = f"Competitors & Levels"
+    title = f"CTST &ndash; Competitors &amp; Levels"
+    h2 = f"Competitors &amp; Levels"
     content = dfC.to_html(border=0, classes='tableColoredHeader tableInnerBorders tableStickyHeader', \
                            col_space='1em', justify='left', index=False, render_links=True, escape=False)
 
@@ -257,7 +255,7 @@ def generateCompetitorFiles():
         #
         # Generate the html for each competitor
         #
-        competitorName = dfC['Name'].iat[0]
+        competitorName = dfC['FirstLastName'].iat[0]
         competitorID = str(competitorID)
         levelName = dfC['Level Name'].iat[0]
 
@@ -318,12 +316,14 @@ def generateEventFiles():
             else:
                 content += f'<h3>{division}&nbsp;&nbsp;<small>({", ".join(h)})</small></h3>'
 
-            df1.loc[:, 'Name'] = f'<a href="../competitors/c-' + df1['Competitor ID'].astype(str) + '.html">' + df1['Name'] + '</a>'
+            df1.loc[:, 'FirstLastName'] = f'<a href="../competitors/c-' + \
+                                            df1['Competitor ID'].astype(str) + '.html">' + \
+                                            df1['FirstLastName'] + '</a>'
 
-            df2 = df1[['Role ID', 'Result', 'Division', 'Role', 'Name', 'Points']].sort_values(by=['Result', 'Role ID'])
+            df2 = df1[['Role ID', 'Result', 'Division', 'Role', 'FirstLastName', 'Points']].sort_values(by=['Result', 'Role ID'])
 
-            # Change column label from 'Name' to 'Competitor Name'
-            df2 = df2.rename(columns = {'Name': 'Competitor Name'})
+            # Change column label from 'FirstLastName' to 'Competitor Name'
+            df2 = df2.rename(columns = {'FirstLastName': 'Competitor Name'})
 
             df3 = df2.pivot_table(index=['Result'], columns='Role', values=['Competitor Name', 'Points'], fill_value='N/A', \
                     aggfunc={'Competitor Name': lambda x:x, 'Points': lambda x:x}, sort=False)
@@ -407,7 +407,7 @@ def getRoleYearRankings(dfIn, includeRanks = True, limit = 0):
         dfP = pd.merge(dfP, dfCompetitors, how="left", left_on="Competitor ID", right_index=True)
 
         # Turn each Competitor Name into a link
-        dfP['Name'] = f'<a href="../competitors/c-' + dfP.index.astype(str) + '.html">' + dfP['Name'] + '</a>'
+        dfP['FirstLastName'] = f'<a href="../competitors/c-' + dfP.index.astype(str) + '.html">' + dfP['FirstLastName'] + '</a>'
 
         # Re-index
         dfP = dfP.reset_index()
@@ -416,13 +416,13 @@ def getRoleYearRankings(dfIn, includeRanks = True, limit = 0):
 
         # Only include the Rank column if requested
         if includeRanks:
-            dfP = dfP[['Rank', 'Name', 'Points']]
+            dfP = dfP[['Rank', 'FirstLastName', 'Points']]
             # Shorten column names for use on small screens
-            dfP = dfP.rename(columns={'Rank': '', 'Name': nameCol, 'Points': 'Pts'})
+            dfP = dfP.rename(columns={'Rank': '', 'FirstLastName': nameCol, 'Points': 'Pts'})
         else:
-            dfP = dfP[['Name', 'Points']]
+            dfP = dfP[['FirstLastName', 'Points']]
             # Shorten column names for use on small screens
-            dfP = dfP.rename(columns={'Name': nameCol, 'Points': 'Pts'})
+            dfP = dfP.rename(columns={'FirstLastName': nameCol, 'Points': 'Pts'})
 
         # Add to the list of DataFrames that will be concatenated
         listDf.append(dfP)
@@ -462,14 +462,14 @@ def getDivisionRankings(dfIn):
 
     dfP = pd.merge(dfP, dfCompetitors, how="left", left_on="Competitor ID", right_index=True)
 
-    # Move the Name column to the front, followed by the Level column
+    # Move the FirstLastName column to the front, followed by the Level column
     col = dfP.pop('Level')
     dfP.insert(0, col.name, col)
-    col = dfP.pop('Name')
+    col = dfP.pop('FirstLastName')
     dfP.insert(0, col.name, col)
 
-    # Remove the 'Competitor Name' column (we only need the 'Name' column,)
-    dfP = dfP.drop(columns=['Competitor Name'])
+    # Remove the 'LastFirstName' column (we only need the 'FirstLastName' column,)
+    dfP = dfP.drop(columns=['LastFirstName'])
 
     # Remove the 'Level Name' column (we only need the 'Level' column, the abbreviated level name)
     dfP = dfP.drop(columns=['Level Name'])
@@ -483,9 +483,9 @@ def getDivisionRankings(dfIn):
     dfP['Level'] = dfP['Level'].map(divisionIdNameAbbrev)
 
     # Turn each Competitor Name into a link
-    dfP['Name'] = f'<a href="../competitors/c-' + dfP.index.astype(str) + '.html">' + dfP['Name'] + '</a>'
+    dfP['FirstLastName'] = f'<a href="../competitors/c-' + dfP.index.astype(str) + '.html">' + dfP['FirstLastName'] + '</a>'
 
-    dfP = dfP.rename(columns={'Name': 'Competitor Name'})
+    dfP = dfP.rename(columns={'FirstLastName': 'Competitor Name'})
 
     # With different numbers of each Role, some values will be filled by NaN
     # Convert all NaN values to zero

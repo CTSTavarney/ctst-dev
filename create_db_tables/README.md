@@ -20,22 +20,26 @@ It should be obvious what datatype is used for each field: integer, text, or dat
 
 Contains the CTST-assigned Competitor ID for each competitor, along with their name. Used only in `table_Results`.
 
+Note that in some cases there may be Competitors that have had multiple Competitor IDs assigned for multiple variations of their name. Work has been done to eliminate duplicate Competitor entries.
+However, there may still be instances of Competitors with multiple IDs for different variations of their name.
+These may be addressed in the future if such cases come to light.
+
 - `Competitor ID` : Primary Key. Uniquely identifies a CTST Competitor.
 This is the actual number assigned to a Competitor by the CTST once the Competitor earns their first point (or has a Result entry in the database even if no points were awarded). There are gaps in the Competitor ID assignments.
 Competitor IDs from the legacy points registry were used unchanged. Some Competitor IDs had to be created for Competitors who
 were mistakenly omitted from the legacy points registry.
 New Competitor IDs are assigned using PowerQuery within an Excel workbook in the `create_csv_new` directory for all new events.
 
-The following Competitor ID ranges currently exist:
-- 100 to 1319 : Numbers from original legacy points registry
-- 1400 to 1404 : Competitors missing from legacy events
-- 1500 to 1658 : Events from Aug 2021 to Aug 2023 (except for Texas Classic 2022)
-- 1700 to 1715 : Texas Classic 2022
-- 1800+ : Events after August 2023
+    The following Competitor ID ranges currently exist:
+    - 100 to 1319 : Numbers from original legacy points registry
+    - 1400 to 1404 : Competitors missing from legacy events
+    - 1501 to 1658 : Events from Aug 2021 to Aug 2023 (except for Texas Classic 2022)
+    - 1701 to 1715 : Texas Classic 2022
+    - 1800+ : Events after August 2023
 
-- `Competitor Name` : Competitor Name. Not referenced from other tables. Note that in some cases there may be Competitors that have had multiple Competitor IDs assigned for multiple variations of their name. Work has been done to eliminate duplicate Competitor entries.
-However, there may still be instances of Competitors with multiple IDs for different variations of their name.
-These may be addressed in the future if such cases come to light.
+- `Last Name` : Competitor's Last Name. Not referenced from other tables. 
+
+- `First Name` : Competitor's First Name. Not referenced from other tables. 
 
 ### table_Contests
 

@@ -1,59 +1,59 @@
-Role,Competitor Name,Competitor ID,Event Date,Event Name,Event Location,Division,Result,Points,Num Entries
-L,"Mincer, Anthony",99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,1,5,8
-L,"Bal, David",99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,2,4,8
-L,"Harris, Zachary",99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,3,3,8
-L,"Frankenberry, Chaz",99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,4,2,8
-L,"Anderson, JT",99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,5,1,8
-L,"Egan, Riley",99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,6,0,8
-L,"Whitaker, Shawn",99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,7,0,8
-L,"Lambe, Travis",99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,8,0,8
-F,"Cichon, Alicia",1036,2/1/2022,UCWDC World's,"Orlando, FL",Novice,1,10,17
-F,"Hockett, Audreyann",99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,2,8,17
-F,"Wenger, Kristin",99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,3,6,17
-F,"Brown, Keely",99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,4,4,17
-F,"Turkovic, Lisa",99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,5,2,17
-F,"Mendez, Felipa",1224,2/1/2022,UCWDC World's,"Orlando, FL",Novice,6,1,17
-F,"Nuno, Adia",1307,2/1/2022,UCWDC World's,"Orlando, FL",Novice,7,1,17
-F,"Davis, Jenny",99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,8,1,17
-L,"Bradchulis, Russ",887,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,1,5,6
-L,"Linger, Michael",491,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,2,4,6
-L,"Devereux, Thomas",1111,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,3,3,6
-L,"Benson, Paul",836,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,4,2,6
-L,"Morland, Doug",594,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,5,1,6
-F,"Nelson, Sequoia",1199,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,1,5,5
-F,"Grothe, Kathy",158,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,2,4,5
-F,"Barrett, Karen",671,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,3,3,5
-F,"Adams, Nikki",1301,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,4,2,5
-F,"Powell, Linda",221,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,5,1,5
-L,"Turner, PJ",1319,2/1/2022,UCWDC World's,"Orlando, FL",Advanced,1,0,4
-L,"Johnson, Craig",112,2/1/2022,UCWDC World's,"Orlando, FL",Advanced,2,0,4
-L,"Ingenthron, Rob",453,2/1/2022,UCWDC World's,"Orlando, FL",Advanced,3,0,4
-L,"Wong, Brian",359,2/1/2022,UCWDC World's,"Orlando, FL",Advanced,4,0,4
-F,"Lundahl, Joan",119,2/1/2022,UCWDC World's,"Orlando, FL",Advanced,1,0,2
-F,"Lundahl, Joan",119,2/1/2022,UCWDC World's,"Orlando, FL",Advanced,2,0,2
-F,"Williams, Jasmine",922,2/1/2022,UCWDC World's,"Orlando, FL",Advanced,3,0,2
-F,"Williams, Jasmine",922,2/1/2022,UCWDC World's,"Orlando, FL",Advanced,4,0,2
-L,"Wong, Brian",359,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,1,0,3
-L,"Wong, Brian",359,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,2,0,3
-L,"Benson, Paul",836,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,3,0,3
-L,"Ingenthron, Rob",453,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,4,0,3
-L,"Benson, Paul",836,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,5,0,3
-L,"Ingenthron, Rob",453,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,6,0,3
-F,"Lundahl, Joan",119,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,1,0,5
-F,"Wald, Nadine",99999,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,2,0,5
-F,"Grothe, Kathy",158,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,3,0,5
-F,"Wald, Nadine",99999,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,4,0,5
-F,"Williams, Jasmine",922,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,5,0,5
-F,"Clifford, Anne",768,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,6,0,5
-L,"Ingenthron, Rob",453,2/1/2022,UCWDC World's,"Orlando, FL",Masters,1,0,5
-L,"Ingenthron, Rob",453,2/1/2022,UCWDC World's,"Orlando, FL",Masters,2,0,5
-L,"Morland, Doug",594,2/1/2022,UCWDC World's,"Orlando, FL",Masters,3,0,5
-L,"Johnson, Craig",112,2/1/2022,UCWDC World's,"Orlando, FL",Masters,4,0,5
-L,"Whitaker, Shawn",99999,2/1/2022,UCWDC World's,"Orlando, FL",Masters,5,0,5
-L,"Whitaker, Shawn",99999,2/1/2022,UCWDC World's,"Orlando, FL",Masters,6,0,5
-F,"Lundahl, Joan",119,2/1/2022,UCWDC World's,"Orlando, FL",Masters,1,0,8
-F,"Adams, Nikki",1301,2/1/2022,UCWDC World's,"Orlando, FL",Masters,2,0,8
-F,"Davis, Jenny",99999,2/1/2022,UCWDC World's,"Orlando, FL",Masters,3,0,8
-F,"Clifford, Anne",768,2/1/2022,UCWDC World's,"Orlando, FL",Masters,4,0,8
-F,"Grothe, Kathy",158,2/1/2022,UCWDC World's,"Orlando, FL",Masters,5,0,8
-F,"Williams, Jasmine",922,2/1/2022,UCWDC World's,"Orlando, FL",Masters,6,0,8
+Role,Last Name,First Name,Competitor ID,Event Date,Event Name,Event Location,Division,Result,Points,Num Entries
+L,Mincer,Anthony,99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,1,5,8
+L,Bal,David,99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,2,4,8
+L,Harris,Zachary,99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,3,3,8
+L,Frankenberry,Chaz,99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,4,2,8
+L,Anderson,JT,99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,5,1,8
+L,Egan,Riley,99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,6,0,8
+L,Whitaker,Shawn,99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,7,0,8
+L,Lambe,Travis,99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,8,0,8
+F,Cichon,Alicia,1036,2/1/2022,UCWDC World's,"Orlando, FL",Novice,1,10,17
+F,Hockett,Audreyann,99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,2,8,17
+F,Wenger,Kristin,99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,3,6,17
+F,Brown,Keely,99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,4,4,17
+F,Turkovic,Lisa,99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,5,2,17
+F,Mendez,Felipa,1224,2/1/2022,UCWDC World's,"Orlando, FL",Novice,6,1,17
+F,Nuno,Adia,1307,2/1/2022,UCWDC World's,"Orlando, FL",Novice,7,1,17
+F,Davis,Jenny,99999,2/1/2022,UCWDC World's,"Orlando, FL",Novice,8,1,17
+L,Bradchulis,Russ,887,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,1,5,6
+L,Linger,Michael,491,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,2,4,6
+L,Devereux,Thomas,1111,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,3,3,6
+L,Benson,Paul,836,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,4,2,6
+L,Morland,Doug,594,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,5,1,6
+F,Nelson,Sequoia,1199,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,1,5,5
+F,Grothe,Kathy,158,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,2,4,5
+F,Barrett,Karen,671,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,3,3,5
+F,Adams,Nikki,1301,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,4,2,5
+F,Powell,Linda,221,2/1/2022,UCWDC World's,"Orlando, FL",Intermediate,5,1,5
+L,Turner,PJ,1319,2/1/2022,UCWDC World's,"Orlando, FL",Advanced,1,0,4
+L,Johnson,Craig,112,2/1/2022,UCWDC World's,"Orlando, FL",Advanced,2,0,4
+L,Ingenthron,Rob,453,2/1/2022,UCWDC World's,"Orlando, FL",Advanced,3,0,4
+L,Wong,Brian,359,2/1/2022,UCWDC World's,"Orlando, FL",Advanced,4,0,4
+F,Lundahl,Joan,119,2/1/2022,UCWDC World's,"Orlando, FL",Advanced,1,0,2
+F,Lundahl,Joan,119,2/1/2022,UCWDC World's,"Orlando, FL",Advanced,2,0,2
+F,Williams,Jasmine,922,2/1/2022,UCWDC World's,"Orlando, FL",Advanced,3,0,2
+F,Williams,Jasmine,922,2/1/2022,UCWDC World's,"Orlando, FL",Advanced,4,0,2
+L,Wong,Brian,359,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,1,0,3
+L,Wong,Brian,359,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,2,0,3
+L,Benson,Paul,836,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,3,0,3
+L,Ingenthron,Rob,453,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,4,0,3
+L,Benson,Paul,836,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,5,0,3
+L,Ingenthron,Rob,453,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,6,0,3
+F,Lundahl,Joan,119,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,1,0,5
+F,Wald,Nadine,99999,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,2,0,5
+F,Grothe,Kathy,158,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,3,0,5
+F,Wald,Nadine,99999,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,4,0,5
+F,Williams,Jasmine,922,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,5,0,5
+F,Clifford,Anne,768,2/1/2022,UCWDC World's,"Orlando, FL",Sophisticated,6,0,5
+L,Ingenthron,Rob,453,2/1/2022,UCWDC World's,"Orlando, FL",Masters,1,0,5
+L,Ingenthron,Rob,453,2/1/2022,UCWDC World's,"Orlando, FL",Masters,2,0,5
+L,Morland,Doug,594,2/1/2022,UCWDC World's,"Orlando, FL",Masters,3,0,5
+L,Johnson,Craig,112,2/1/2022,UCWDC World's,"Orlando, FL",Masters,4,0,5
+L,Whitaker,Shawn,99999,2/1/2022,UCWDC World's,"Orlando, FL",Masters,5,0,5
+L,Whitaker,Shawn,99999,2/1/2022,UCWDC World's,"Orlando, FL",Masters,6,0,5
+F,Lundahl,Joan,119,2/1/2022,UCWDC World's,"Orlando, FL",Masters,1,0,8
+F,Adams,Nikki,1301,2/1/2022,UCWDC World's,"Orlando, FL",Masters,2,0,8
+F,Davis,Jenny,99999,2/1/2022,UCWDC World's,"Orlando, FL",Masters,3,0,8
+F,Clifford,Anne,768,2/1/2022,UCWDC World's,"Orlando, FL",Masters,4,0,8
+F,Grothe,Kathy,158,2/1/2022,UCWDC World's,"Orlando, FL",Masters,5,0,8
+F,Williams,Jasmine,922,2/1/2022,UCWDC World's,"Orlando, FL",Masters,6,0,8

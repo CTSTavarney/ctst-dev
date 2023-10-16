@@ -38,6 +38,7 @@ These Bash scripts can run on Linux, or on Windows using Git Bash/Cygwin/MinGW/W
 
 The script makes the following changes to the original legacy data:
 
+- Split competitor names into separate Last Name and First Name fields for easier data analysis
 - Use consistent naming for events and their locations to allow easier data analysis
 - Replace event year with date to allow events to be sorted chronologically within each year
 - Source the `corrections.sh` script to fix errors in competitors' points data

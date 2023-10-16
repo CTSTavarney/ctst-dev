@@ -165,13 +165,19 @@ sed -i -E 's/^/F;/' "${OUT_CSV_FOLLOWER_TMP}"
 cat "${OUT_CSV_LEADER_TMP}" "${OUT_CSV_FOLLOWER_TMP}" > "${OUT_CSV}"
 
 
+# Split competitor name into first name and last name, splitting on the LAST comma,
+# since at least one competitor last name itself contains a comma: Falls, Jr., Richard
+OUT_CSV_TMP=$(mktemp)
+awk 'BEGIN { FS=";"; OFS=";" }; { match($2, /\s*(.*)\s*,\s*(.*)\s*/, arr); $2=arr[1] FS arr[2]; print; }' "${OUT_CSV}" > "${OUT_CSV_TMP}"
+cp "${OUT_CSV_TMP}" "${OUT_CSV}"
+
 # Move the Year column before the Event column
 OUT_CSV_TMP=$(mktemp)
-awk 'BEGIN { FS=";"; OFS=";" }; { temp=$4; $4=$5; $5=temp; print; }' "${OUT_CSV}" > "${OUT_CSV_TMP}"
+awk 'BEGIN { FS=";"; OFS=";" }; { temp=$5; $5=$6; $6=temp; print; }' "${OUT_CSV}" > "${OUT_CSV_TMP}"
 cp "${OUT_CSV_TMP}" "${OUT_CSV}"
 
 # Insert CSV Header before line 1
-sed -i -E '1 i Role\;Competitor Name\;Competitor ID\;Event Date\;Event Name\;Event Location\;Division\;Result\;Points' "${OUT_CSV}"
+sed -i -E '1 i Role\;Last Name\;First Name\;Competitor ID\;Event Date\;Event Name\;Event Location\;Division\;Result\;Points' "${OUT_CSV}"
 
 # Apply consistent event naming
 sed -i -E \
@@ -336,7 +342,7 @@ source "${SCRIPT_DIR}/corrections.sh" "${OUT_CSV}"
 # Convert semicolons to commas, since some applications (GitHub Code display),
 # don't support CSV files with separators other than commas
 OUT_CSV_TMP=$(mktemp)
-awk -v Q="\x22" 'BEGIN { FS=";"; OFS="," }; { print $1,Q$2Q,$3,$4,Q$5Q,Q$6Q,$7,$8,$9 }' "${OUT_CSV}" > "${OUT_CSV_TMP}"
+awk -v Q="\x22" 'BEGIN { FS=";"; OFS="," }; { print $1,Q$2Q,Q$3Q,$4,$5,Q$6Q,Q$7Q,$8,$9,$10 }' "${OUT_CSV}" > "${OUT_CSV_TMP}"
 cp "${OUT_CSV_TMP}" "${OUT_CSV}"
 
 # Apply competitor name/number changes

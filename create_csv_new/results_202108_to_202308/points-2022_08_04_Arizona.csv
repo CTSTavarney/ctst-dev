@@ -1,57 +1,57 @@
-Role,Competitor Name,Competitor ID,Event Date,Event Name,Event Location,Division,Result,Points,Num Entries
-L,"Mincer, Anthony",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,1,0,3
-L,"Mincer, Anthony",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,2,0,3
-L,"Waugh, David",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,3,0,3
-L,"Mincer, Anthony",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,4,0,3
-L,"Waugh, David",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,5,0,3
-L,"Campbell, Steven",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,6,0,3
-L,"Waugh, David",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,7,0,3
-L,"Campbell, Steven",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,8,0,3
-L,"Waugh, David",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,9,0,3
-L,"Campbell, Steven",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,10,0,3
-F,"Gleave, Suzanne",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,1,5,10
-F,"Dupaix, Debbie",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,2,4,10
-F,"Keister, Mackenzie",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,3,3,10
-F,"Medina, Cynthia",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,4,2,10
-F,"Hogue, Shaela",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,5,1,10
-F,"Greer, Haley",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,6,0,10
-F,"Andrews, Kristin",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,7,0,10
-F,"Telzer, Lynn",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,8,0,10
-F,"Weathersbee, Burgundy",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,9,0,10
-F,"Mendoza, Joseph",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,10,0,10
-L,"Mullins, Jake",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,1,0,4
-L,"Darden, Dayne",1251,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,2,0,4
-L,"Greer, Rocky",1310,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,3,0,4
-L,"Kashack, Gene",930,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,4,0,4
-L,"Darden, Dayne",1251,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,5,0,4
-F,"Lorenz, Souraya",1318,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,1,5,5
-F,"Grothe, Kathy",158,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,2,4,5
-F,"Fait, Kimalyn",599,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,3,3,5
-F,"Lancelotta, Sheila",392,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,4,2,5
-F,"Shawl, Debi",194,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,5,1,5
-L,"Plagens, Patrick",125,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,1,5,5
-L,"Ingenthron, Rob",453,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,2,4,5
-L,"Bradchulis, Russ",887,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,3,3,5
-L,"Searl, David",208,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,4,2,5
-L,"Cauthen, James",164,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,5,1,5
-F,"Skredsvig, Haley",176,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,1,0,4
-F,"Bussen, Alayna",479,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,2,0,4
-F,"Perez-Banda, Kristina",519,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,3,0,4
-F,"Gubb, Julie",1302,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,4,0,4
-F,"Perez-Banda, Kristina",519,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,5,0,4
-L,"Cauthen, James",164,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,1,0,8
-L,"Hanepen, Carl",447,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,2,0,8
-L,"Ingenthron, Rob",453,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,3,0,8
-L,"Mullins, Jake",99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,4,0,8
-L,"Martin, William",725,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,5,0,8
-L,"Plagens, Patrick",125,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,6,0,8
-L,"Kashack, Gene",930,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,7,0,8
-L,"Searl, David",208,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,8,0,8
-F,"Fait, Kimalyn",599,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,1,0,4
-F,"Lancelotta, Sheila",392,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,2,0,4
-F,"Fait, Kimalyn",599,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,3,0,4
-F,"Hanepen, Valerie",448,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,4,0,4
-F,"Lancelotta, Sheila",392,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,5,0,4
-F,"Grothe, Kathy",158,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,6,0,4
-F,"Hanepen, Valerie",448,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,7,0,4
-F,"Grothe, Kathy",158,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,8,0,4
+Role,Last Name,First Name,Competitor ID,Event Date,Event Name,Event Location,Division,Result,Points,Num Entries
+L,Mincer,Anthony,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,1,0,3
+L,Mincer,Anthony,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,2,0,3
+L,Waugh,David,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,3,0,3
+L,Mincer,Anthony,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,4,0,3
+L,Waugh,David,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,5,0,3
+L,Campbell,Steven,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,6,0,3
+L,Waugh,David,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,7,0,3
+L,Campbell,Steven,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,8,0,3
+L,Waugh,David,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,9,0,3
+L,Campbell,Steven,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,10,0,3
+F,Gleave,Suzanne,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,1,5,10
+F,Dupaix,Debbie,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,2,4,10
+F,Keister,Mackenzie,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,3,3,10
+F,Medina,Cynthia,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,4,2,10
+F,Hogue,Shaela,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,5,1,10
+F,Greer,Haley,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,6,0,10
+F,Andrews,Kristin,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,7,0,10
+F,Telzer,Lynn,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,8,0,10
+F,Weathersbee,Burgundy,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,9,0,10
+F,Mendoza,Joseph,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Novice,10,0,10
+L,Mullins,Jake,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,1,0,4
+L,Darden,Dayne,1251,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,2,0,4
+L,Greer,Rocky,1310,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,3,0,4
+L,Kashack,Gene,930,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,4,0,4
+L,Darden,Dayne,1251,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,5,0,4
+F,Lorenz,Souraya,1318,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,1,5,5
+F,Grothe,Kathy,158,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,2,4,5
+F,Fait,Kimalyn,599,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,3,3,5
+F,Lancelotta,Sheila,392,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,4,2,5
+F,Shawl,Debi,194,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Intermediate,5,1,5
+L,Plagens,Patrick,125,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,1,5,5
+L,Ingenthron,Rob,453,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,2,4,5
+L,Bradchulis,Russ,887,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,3,3,5
+L,Searl,David,208,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,4,2,5
+L,Cauthen,James,164,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,5,1,5
+F,Skredsvig,Haley,176,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,1,0,4
+F,Bussen,Alayna,479,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,2,0,4
+F,Perez-Banda,Kristina,519,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,3,0,4
+F,Gubb,Julie,1302,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,4,0,4
+F,Perez-Banda,Kristina,519,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Advanced,5,0,4
+L,Cauthen,James,164,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,1,0,8
+L,Hanepen,Carl,447,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,2,0,8
+L,Ingenthron,Rob,453,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,3,0,8
+L,Mullins,Jake,99999,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,4,0,8
+L,Martin,William,725,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,5,0,8
+L,Plagens,Patrick,125,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,6,0,8
+L,Kashack,Gene,930,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,7,0,8
+L,Searl,David,208,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,8,0,8
+F,Fait,Kimalyn,599,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,1,0,4
+F,Lancelotta,Sheila,392,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,2,0,4
+F,Fait,Kimalyn,599,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,3,0,4
+F,Hanepen,Valerie,448,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,4,0,4
+F,Lancelotta,Sheila,392,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,5,0,4
+F,Grothe,Kathy,158,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,6,0,4
+F,Hanepen,Valerie,448,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,7,0,4
+F,Grothe,Kathy,158,8/4/2022,Arizona Dance Classic,"Phoenix, AZ",Masters,8,0,4
