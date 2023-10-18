@@ -27,7 +27,7 @@ dfEventLocations        = pd.read_csv(dbDirectory / 'table_EventLocations.csv', 
 dfEventNames            = pd.read_csv(dbDirectory / 'table_EventNames.csv',     index_col='Event Name ID')
 dfEvents                = pd.read_csv(dbDirectory / 'table_Events.csv',         index_col='Event ID', parse_dates=['Event Date'])
 dfResults               = pd.read_csv(dbDirectory / 'table_Results.csv',        index_col='Result ID')
-dfRoles                 = pd.read_csv(dbDirectory / 'table_Roles.csv',          index_col='Role ID')           
+dfRoles                 = pd.read_csv(dbDirectory / 'table_Roles.csv',          index_col='Role ID')
 
 # Create a new Year column in the Events table
 dfEvents['Year'] = dfEvents['Event Date'].dt.year
@@ -533,7 +533,8 @@ def generateRankingsFiles():
     # Generate the html
     title = f"CTST &ndash; Overall Division Rankings"
     h2 = f"Overall Division Rankings"
-    content = dfLF.to_html(border=0, classes='tableColoredHeader tableInnerBorders tableStickyHeader', \
+    content = '<div class="divisionKey">Novice&nbsp;(Nov), Intermediate&nbsp;(Int), Advanced&nbsp;(Adv), All&#8209;Stars&nbsp;(Als)</div>' + \
+              dfLF.to_html(border=0, classes='tableColoredHeader tableInnerBorders tableStickyHeader', \
                            col_space='1em', justify='left', index=False, render_links=True, escape=False)
 
     html = htmlTemplate.format(title=title, h2=h2, content=content)
