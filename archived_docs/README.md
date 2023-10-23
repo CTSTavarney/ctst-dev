@@ -11,4 +11,4 @@ None of these CTST documents themselves constitute the "official" contest scores
 
 For the legacy CTST points data (up to January, 2020), the only documents actually used to generate the new CTST Points Database were the Points Registry documents in the `archived_points_registry` folder (two PDF files, one each for men's and women's points).
 
-For subsequent (post-2020) events, the CTST Points data is derived from competition entry lists and results for the indivdual Events.
+For subsequent (post-2020) events, the CTST Points data are derived from competition entry lists and results for the indivdual Events. The Event Results folder contains documents used to derive Points Registry data for these events.

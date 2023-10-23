@@ -35,7 +35,7 @@ New Competitor IDs are assigned using PowerQuery within an Excel workbook in the
     - 1400 to 1404 : Competitors missing from legacy events
     - 1501 to 1658 : Events from Aug 2021 to Aug 2023 (except for Texas Classic 2022)
     - 1701 to 1715 : Texas Classic 2022
-    - 1800+ : Events after August 2023
+    - 1801+ : Events after August 2023
 
 - `Last Name` : Competitor's Last Name. Not referenced from other tables. 
 
