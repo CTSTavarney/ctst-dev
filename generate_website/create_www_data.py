@@ -210,6 +210,7 @@ def generateCompetitorFiles():
 
         #
         # Get the competitor's points by division, omitting divisions with no points
+        # Can modify with more data
         #
         dfP = dfC[dfC['Points'] > 0]
         pointsByDivision = dfP.groupby(['Division ID', 'Division'], as_index=False)['Points'].sum()[['Division', 'Points']]
@@ -238,6 +239,7 @@ def generateCompetitorFiles():
         dfC['Date'] = '<span style="float:left">' +  dfC['Event Date'].dt.strftime('%b') + '&nbsp;</span>' + \
                       '<span style="float:right">' + dfC['Event Date'].dt.strftime('%Y') + '</span>'
 
+        #appends the event table of the competitor
         content += '<div>' + dfC.to_html(border=0, classes='tableColoredHeader tableNoBorder', \
                                          justify='left', index=False, render_links=True, escape=False, \
                                          columns=['Date', 'Event', 'Div', 'L/F', 'Res', 'Pts']) + '</div>'
@@ -259,9 +261,9 @@ def generateCompetitorFiles():
         competitorID = str(competitorID)
         levelName = dfC['Level Name'].iat[0]
 
-        title = f"CTST &ndash; {competitorName}"
-        h2 = f"{competitorName}  [{competitorID}] &mdash; {levelName}"
-        html = htmlTemplate.format(title=title, h2=h2, content=content)
+        title = f"CTST &ndash; {competitorName}" #this is the tab title in a browser
+        h2 = f"{competitorName}  [{competitorID}] &mdash; {levelName}" #header of the webpage
+        html = htmlTemplate.format(title=title, h2=h2, content=content) #content is the body of the webpage
 
         # Write an html file for each competitor
         with open(competitorsDirectory / f'c-{competitorID}.html', 'w') as f:
