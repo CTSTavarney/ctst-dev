@@ -143,13 +143,13 @@ dfC = dfCompetitors.sort_values('LastFirstName')
 dfC['v'] = dfC['LastFirstName'] + '  -  ' + dfC.index.astype(str)
 dfC.index.names = ['k']
 
-pd.concat([dfTop, dfC])['v'].to_json(competitorsIndexPath, orient="table")
+pd.concat([dfTop, dfC])['v'].to_json(competitorsIndexPath, orient="table", indent=4)
 
 # Events
 dfE = dfEvents.sort_values(by='Event Date', ascending=False)
 dfE.index.names = ['k']
 dfE['v'] = dfE['Year'].astype(str) + ' - ' + dfE['Event Name'] + ', '  + dfE['Event Location']
-dfE['v'].to_json(eventsIndexPath, orient="table")
+dfE['v'].to_json(eventsIndexPath, orient="table", indent=4)
 
 # Point Rankings
 dfTop = pd.DataFrame(data={ 'v': ['Overall Point Rankings', 'Overall Division Rankings'] }, index=[1, 2])
@@ -160,7 +160,7 @@ titles = [ str(y) + ' Point Rankings' for y in years ]
 dfP = pd.DataFrame(data={ 'v': titles }, index=years)
 dfP.index.names = ['k']
 
-pd.concat([dfTop, dfP])['v'].to_json(pointsIndexPath, orient="table")
+pd.concat([dfTop, dfP])['v'].to_json(pointsIndexPath, orient="table", indent=4)
 
 #############################
 # Generate Competitor Files
