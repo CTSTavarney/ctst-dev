@@ -17,6 +17,10 @@
     },
     "data":[
         {
+            "k":132,
+            "v":"2024 - UCWDC World's, Dallas, TX"
+        },
+        {
             "k":131,
             "v":"2023 - Mountain Magic, Lake Tahoe, NV"
         },
@@ -65,12 +69,12 @@
             "v":"2022 - Arizona Dance Classic, Phoenix, AZ"
         },
         {
-            "k":118,
-            "v":"2022 - Colorado Country Classic, Colorado Springs, CO"
-        },
-        {
             "k":119,
             "v":"2022 - Indy Dance Explosion, Indianapolis, IN"
+        },
+        {
+            "k":118,
+            "v":"2022 - Colorado Country Classic, Colorado Springs, CO"
         },
         {
             "k":117,
