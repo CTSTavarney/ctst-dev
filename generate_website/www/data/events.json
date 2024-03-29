@@ -17,6 +17,10 @@
     },
     "data":[
         {
+            "k":134,
+            "v":"2024 - San Diego Festival, Orange Co, CA"
+        },
+        {
             "k":133,
             "v":"2024 - High Desert Classic, Lancaster, CA"
         },
@@ -73,12 +77,12 @@
             "v":"2022 - Arizona Dance Classic, Phoenix, AZ"
         },
         {
-            "k":119,
-            "v":"2022 - Indy Dance Explosion, Indianapolis, IN"
-        },
-        {
             "k":118,
             "v":"2022 - Colorado Country Classic, Colorado Springs, CO"
+        },
+        {
+            "k":119,
+            "v":"2022 - Indy Dance Explosion, Indianapolis, IN"
         },
         {
             "k":117,
