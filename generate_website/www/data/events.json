@@ -17,6 +17,10 @@
     },
     "data":[
         {
+            "k":135,
+            "v":"2024 - Calgary Dance Stampede, Calgary, AB"
+        },
+        {
             "k":134,
             "v":"2024 - San Diego Festival, Orange Co, CA"
         },
@@ -77,12 +81,12 @@
             "v":"2022 - Arizona Dance Classic, Phoenix, AZ"
         },
         {
-            "k":118,
-            "v":"2022 - Colorado Country Classic, Colorado Springs, CO"
-        },
-        {
             "k":119,
             "v":"2022 - Indy Dance Explosion, Indianapolis, IN"
+        },
+        {
+            "k":118,
+            "v":"2022 - Colorado Country Classic, Colorado Springs, CO"
         },
         {
             "k":117,
