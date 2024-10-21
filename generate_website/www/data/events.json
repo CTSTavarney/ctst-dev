@@ -17,6 +17,10 @@
     },
     "data":[
         {
+            "k":142,
+            "v":"2024 - Paradise Festival, Orange Co, CA"
+        },
+        {
             "k":141,
             "v":"2024 - Let's Dance Portland, Portland, OR"
         },
@@ -105,12 +109,12 @@
             "v":"2022 - Arizona Dance Classic, Phoenix, AZ"
         },
         {
-            "k":119,
-            "v":"2022 - Indy Dance Explosion, Indianapolis, IN"
-        },
-        {
             "k":118,
             "v":"2022 - Colorado Country Classic, Colorado Springs, CO"
+        },
+        {
+            "k":119,
+            "v":"2022 - Indy Dance Explosion, Indianapolis, IN"
         },
         {
             "k":117,
