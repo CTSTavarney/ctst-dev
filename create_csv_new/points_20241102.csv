@@ -1,14 +1,14 @@
 Role,Last Name,First Name,Competitor ID,Event Date,Event Name,Event Location,Division,Result,Points,Num Entries
 L,Ilg,Mark,1918,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Novice,1,5,6
-F,Furler,Alison,1919,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Novice,1,5,11
+F,Furler,Ali,1815,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Novice,1,5,11
 L,Bryan,Angie,170,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Novice,2,4,6
 F,Locke,Carol,1403,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Novice,2,4,11
 L,Davis,Laura,1314,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Novice,3,3,6
 F,McKenzie,April,1583,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Novice,3,3,11
 L,Ort,Jeff,1813,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Novice,4,2,6
-F,Langworthy,Amanda,1920,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Novice,4,2,11
-L,Cooper,David,1921,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Novice,5,1,6
-F,Davidson,Amanda,1922,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Novice,5,1,11
+F,Langworthy,Amanda,1919,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Novice,4,2,11
+L,Cooper,David,1920,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Novice,5,1,6
+F,Davidson,Amanda,1921,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Novice,5,1,11
 L,Mamalakis,John-Mark,969,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Intermediate,1,5,6
 F,Davis,Laura,1314,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Intermediate,1,5,5
 L,Arkoff,Dan,257,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Intermediate,2,4,6
@@ -18,7 +18,7 @@ F,Davis,Laura,1314,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Intermediate,3,0,5
 L,Lahm,Arthur,117,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Intermediate,4,2,6
 F,Leon,Heather,1804,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Intermediate,4,2,5
 L,Santos,Elgin,1063,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Intermediate,5,1,6
-F,Aronovsky,Susan,1923,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Intermediate,5,1,5
+F,Aronovsky,Susan,1922,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Intermediate,5,1,5
 L,Austin,Brad,1584,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Intermediate,6,0,6
 F,Harwin,Lisa Kay,1833,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Intermediate,6,0,5
 L,Taylor,Jonathan,968,11/2/2024,Mountain Magic,"Lake Tahoe, NV",Advanced,1,5,5
