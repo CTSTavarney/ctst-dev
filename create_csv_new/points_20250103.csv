@@ -1,0 +1,45 @@
+Role,Last Name,First Name,Competitor ID,Event Date,Event Name,Event Location,Division,Result,Points,Num Entries
+L,Grove,Nathan,1922,1/3/2025,Worlds,"Orlando, FL",Novice,1,5,8
+F,Walton,Jennifer,1954,1/3/2025,Worlds,"Orlando, FL",Novice,1,10,18
+L,Morgan,Jonathan,1888,1/3/2025,Worlds,"Orlando, FL",Novice,2,4,8
+F,Wald,Nadine,1529,1/3/2025,Worlds,"Orlando, FL",Novice,2,8,18
+L,Cogswell,Jared,1624,1/3/2025,Worlds,"Orlando, FL",Novice,3,3,8
+F,Szymanski,Anna,1955,1/3/2025,Worlds,"Orlando, FL",Novice,3,6,18
+L,Winkler,Eric,1956,1/3/2025,Worlds,"Orlando, FL",Novice,4,2,8
+F,Parker,Rebecca,1626,1/3/2025,Worlds,"Orlando, FL",Novice,4,4,18
+L,Buchwald,Eric,1957,1/3/2025,Worlds,"Orlando, FL",Novice,5,1,8
+F,Morrison,Clay,1817,1/3/2025,Worlds,"Orlando, FL",Novice,5,2,18
+L,Waugh,David,1549,1/3/2025,Worlds,"Orlando, FL",Novice,6,0,8
+F,Triplett,Julia,1862,1/3/2025,Worlds,"Orlando, FL",Novice,6,1,18
+L,Morrison,Clay,1817,1/3/2025,Worlds,"Orlando, FL",Intermediate,1,5,10
+F,Mollison,Sarah,1879,1/3/2025,Worlds,"Orlando, FL",Intermediate,1,5,5
+L,Kaiser,Justin,1645,1/3/2025,Worlds,"Orlando, FL",Intermediate,2,4,10
+F,Telzer,Lynn,1572,1/3/2025,Worlds,"Orlando, FL",Intermediate,2,4,5
+L,Frankenberry,Chaz,1519,1/3/2025,Worlds,"Orlando, FL",Intermediate,3,3,10
+F,Weathersbee,Burgundy,1573,1/3/2025,Worlds,"Orlando, FL",Intermediate,3,3,5
+L,Schuman,Scott,1564,1/3/2025,Worlds,"Orlando, FL",Intermediate,4,2,10
+F,Casazza,Kristina,1507,1/3/2025,Worlds,"Orlando, FL",Intermediate,4,2,5
+L,Reding,Jacob,1928,1/3/2025,Worlds,"Orlando, FL",Intermediate,5,1,10
+F,Baerman,Jutta,466,1/3/2025,Worlds,"Orlando, FL",Intermediate,5,1,5
+L,Ingenthron,Rob,453,1/3/2025,Worlds,"Orlando, FL",Sophisticated,1,0,3
+F,Brown,Cheryl,825,1/3/2025,Worlds,"Orlando, FL",Sophisticated,1,0,5
+L,Reding,Jacob,1928,1/3/2025,Worlds,"Orlando, FL",Sophisticated,2,0,3
+F,Wald,Nadine,1529,1/3/2025,Worlds,"Orlando, FL",Sophisticated,2,0,5
+L,Ingenthron,Rob,453,1/3/2025,Worlds,"Orlando, FL",Sophisticated,3,0,3
+F,Grothe,Kathy,158,1/3/2025,Worlds,"Orlando, FL",Sophisticated,3,0,5
+L,Housego,Cliff,376,1/3/2025,Worlds,"Orlando, FL",Sophisticated,4,0,3
+F,Casazza,Kristina,1507,1/3/2025,Worlds,"Orlando, FL",Sophisticated,4,0,5
+L,Housego,Cliff,376,1/3/2025,Worlds,"Orlando, FL",Sophisticated,5,0,3
+F,Walton,Jennifer,1954,1/3/2025,Worlds,"Orlando, FL",Sophisticated,5,0,5
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
