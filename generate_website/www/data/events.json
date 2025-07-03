@@ -17,6 +17,10 @@
     },
     "data":[
         {
+            "k":152,
+            "v":"2025 - Colorado Country Classic, Denver, CO"
+        },
+        {
             "k":151,
             "v":"2025 - Center Stage Country Swing, Boise, ID"
         },
@@ -145,12 +149,12 @@
             "v":"2022 - Arizona Dance Classic, Phoenix, AZ"
         },
         {
-            "k":118,
-            "v":"2022 - Colorado Country Classic, Colorado Springs, CO"
-        },
-        {
             "k":119,
             "v":"2022 - Indy Dance Explosion, Indianapolis, IN"
+        },
+        {
+            "k":118,
+            "v":"2022 - Colorado Country Classic, Colorado Springs, CO"
         },
         {
             "k":117,
