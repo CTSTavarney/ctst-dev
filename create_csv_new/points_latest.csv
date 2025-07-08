@@ -2896,10 +2896,10 @@ F,Peck,Pamela,837,11/12/2015,Dallas Dance Festival,"Dallas, TX",Novice,5,1,-1
 F,Peck,Pamela,837,8/7/2015,Lone Star Invitational,"Austin, TX",Novice,5,2,-1
 F,Peck,Pamela,837,8/11/2017,Lone Star Invitational,"Austin, TX",Novice,10,1,-1
 F,Peck,Pamela,837,10/13/2017,Waltz Across Texas,"Houston, TX",Novice,3,3,-1
-F,Peet,D'Leen,829,7/10/2015,Portland Dance Festival,"Portland, OR",Novice,2,4,-1
-F,Peet,D'Leen,829,9/3/2015,South Bay Dance Fling,"San Jose, CA",Novice,3,3,-1
-F,Peet,D'Leen,829,9/1/2016,South Bay Dance Fling,"San Jose, CA",Novice,4,2,-1
-F,Peete,D'Leene,1202,7/12/2018,Portland Dance Festival,"Portland, OR",Advanced,5,1,-1
+F,DeBoer,D'Leene,829,7/10/2015,Portland Dance Festival,"Portland, OR",Novice,2,4,-1
+F,DeBoer,D'Leene,829,9/3/2015,South Bay Dance Fling,"San Jose, CA",Novice,3,3,-1
+F,DeBoer,D'Leene,829,9/1/2016,South Bay Dance Fling,"San Jose, CA",Novice,4,2,-1
+F,DeBoer,D'Leene,829,7/12/2018,Portland Dance Festival,"Portland, OR",Advanced,5,1,-1
 F,Perez,Angela,1062,4/13/2017,San Diego Festival,"San Diego, CA",Novice,1,5,-1
 F,Perez-Banda,Kristina,519,12/3/2015,Las Vegas Finale,"Las Vegas, NV",Advanced,2,4,-1
 F,Perez-Banda,Kristina,519,4/13/2017,San Diego Festival,"San Diego, CA",Advanced,1,5,-1
@@ -5071,3 +5071,25 @@ L,Setzer,Brad,2005,6/28/2025,Colorado Country Classic,"Denver, CO",Masters,4,0,5
 F,Halladay,Mindy,274,6/28/2025,Colorado Country Classic,"Denver, CO",Masters,4,0,5
 L,McMaster,Doug,2012,6/28/2025,Colorado Country Classic,"Denver, CO",Masters,5,0,5
 F,Sandoval,Lisa,583,6/28/2025,Colorado Country Classic,"Denver, CO",Masters,5,0,5
+L,DeBoer,James,2013,6/29/2025,Dance N Play,"Redmond, Oregon",Novice,1,5,6
+F,Zeigman,Jessica,2014,6/29/2025,Dance N Play,"Redmond, Oregon",Novice,1,5,10
+L,Johnson,Paul,2015,6/29/2025,Dance N Play,"Redmond, Oregon",Novice,2,4,6
+F,Krautscheid,Karen,1858,6/29/2025,Dance N Play,"Redmond, Oregon",Novice,2,4,10
+L,Dettwyler,Kelvin,2016,6/29/2025,Dance N Play,"Redmond, Oregon",Novice,3,3,6
+F,Black,Erin,1856,6/29/2025,Dance N Play,"Redmond, Oregon",Novice,3,3,10
+L,Welsh,Joe,1991,6/29/2025,Dance N Play,"Redmond, Oregon",Novice,4,2,6
+F,Lurie,Taylor,2017,6/29/2025,Dance N Play,"Redmond, Oregon",Novice,4,2,10
+L,Miller,Kyle,2018,6/29/2025,Dance N Play,"Redmond, Oregon",Novice,5,1,6
+F,Roth,Hannah,1857,6/29/2025,Dance N Play,"Redmond, Oregon",Novice,5,1,10
+L,Lemon,Phillip,2019,6/29/2025,Dance N Play,"Redmond, Oregon",Novice,6,0,6
+F,Heitzman,Lexie Renee,2020,6/29/2025,Dance N Play,"Redmond, Oregon",Novice,6,0,10
+L,Taylor,Jonathan,968,6/29/2025,Dance N Play,"Redmond, Oregon",Intermediate,1,5,5
+F,Jensen,Katie,2021,6/29/2025,Dance N Play,"Redmond, Oregon",Intermediate,1,5,5
+L,Devereux,Thomas,1111,6/29/2025,Dance N Play,"Redmond, Oregon",Intermediate,2,4,5
+F,Napier,Stacy,2022,6/29/2025,Dance N Play,"Redmond, Oregon",Intermediate,2,4,5
+L,McKay,Scot,723,6/29/2025,Dance N Play,"Redmond, Oregon",Intermediate,3,3,5
+F,Nelson,Sequoia,1199,6/29/2025,Dance N Play,"Redmond, Oregon",Intermediate,3,3,5
+L,Damm,Tim,185,6/29/2025,Dance N Play,"Redmond, Oregon",Intermediate,4,2,5
+F,Lefohn,Karen,2023,6/29/2025,Dance N Play,"Redmond, Oregon",Intermediate,4,2,5
+L,Lahm,Arthur,117,6/29/2025,Dance N Play,"Redmond, Oregon",Intermediate,5,1,5
+F,DeBoer,D'Leene,829,6/29/2025,Dance N Play,"Redmond, Oregon",Intermediate,5,1,5
