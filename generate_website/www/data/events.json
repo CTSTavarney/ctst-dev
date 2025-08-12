@@ -17,8 +17,12 @@
     },
     "data":[
         {
+            "k":154,
+            "v":"2025 - Arizona Dance Classic, Phoenix, AZ"
+        },
+        {
             "k":153,
-            "v":"2025 - Dance N Play, Redmond, Oregon"
+            "v":"2025 - Dance N Play, Redmond, OR"
         },
         {
             "k":152,
@@ -153,12 +157,12 @@
             "v":"2022 - Arizona Dance Classic, Phoenix, AZ"
         },
         {
-            "k":119,
-            "v":"2022 - Indy Dance Explosion, Indianapolis, IN"
-        },
-        {
             "k":118,
             "v":"2022 - Colorado Country Classic, Colorado Springs, CO"
+        },
+        {
+            "k":119,
+            "v":"2022 - Indy Dance Explosion, Indianapolis, IN"
         },
         {
             "k":117,
