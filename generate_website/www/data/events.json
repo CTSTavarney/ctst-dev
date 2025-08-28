@@ -17,8 +17,12 @@
     },
     "data":[
         {
-            "k":154,
+            "k":155,
             "v":"2025 - Arizona Dance Classic, Phoenix, AZ"
+        },
+        {
+            "k":154,
+            "v":"2025 - YESSS!!, Scottsdale, AZ"
         },
         {
             "k":153,
@@ -82,7 +86,7 @@
         },
         {
             "k":138,
-            "v":"2024 - YESSS!!!, Scottsdale, AZ"
+            "v":"2024 - YESSS!!, Scottsdale, AZ"
         },
         {
             "k":137,
@@ -157,12 +161,12 @@
             "v":"2022 - Arizona Dance Classic, Phoenix, AZ"
         },
         {
-            "k":118,
-            "v":"2022 - Colorado Country Classic, Colorado Springs, CO"
-        },
-        {
             "k":119,
             "v":"2022 - Indy Dance Explosion, Indianapolis, IN"
+        },
+        {
+            "k":118,
+            "v":"2022 - Colorado Country Classic, Colorado Springs, CO"
         },
         {
             "k":117,
