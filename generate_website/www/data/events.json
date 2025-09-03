@@ -17,6 +17,10 @@
     },
     "data":[
         {
+            "k":156,
+            "v":"2025 - South Bay Dance Fling, San Jose, CA"
+        },
+        {
             "k":155,
             "v":"2025 - Arizona Dance Classic, Phoenix, AZ"
         },
@@ -161,12 +165,12 @@
             "v":"2022 - Arizona Dance Classic, Phoenix, AZ"
         },
         {
-            "k":119,
-            "v":"2022 - Indy Dance Explosion, Indianapolis, IN"
-        },
-        {
             "k":118,
             "v":"2022 - Colorado Country Classic, Colorado Springs, CO"
+        },
+        {
+            "k":119,
+            "v":"2022 - Indy Dance Explosion, Indianapolis, IN"
         },
         {
             "k":117,
