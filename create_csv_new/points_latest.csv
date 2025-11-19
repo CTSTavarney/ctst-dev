@@ -2777,10 +2777,10 @@ F,Meyer,Debra,1164,4/12/2018,Calgary Dance Stampede,"Calgary, AB",Novice,4,4,-1
 F,Meyer,Debra,1164,7/12/2018,Portland Dance Festival,"Portland, OR",Novice,6,1,-1
 F,Miller,Jessica,1005,8/11/2017,Lone Star Invitational,"Austin, TX",Novice,6,1,-1
 F,Miller,Julie,186,7/13/2012,Portland Dance Festival,"Portland, OR",Intermediate,2,4,-1
-F,Miller,Karen,350,6/25/2017,Colorado Country Classic,"Denver, CO",Masters,4,0,-1
-F,Miller,Karen,350,1/1/2013,UCWDC Worlds,"Nashville, TN",Advanced,4,2,-1
-F,Miller,Karen,350,7/10/2015,Portland Dance Festival,"Portland, OR",Novice,3,3,-1
-F,Miller,Karen,350,3/29/2018,San Diego Festival,"San Diego, CA",Novice,9,1,-1
+F,Miller,Karen,2077,6/25/2017,Colorado Country Classic,"Denver, CO",Masters,4,0,-1
+F,Miller,Karen M,350,1/1/2013,UCWDC Worlds,"Nashville, TN",Advanced,4,2,-1
+F,Miller,Karen,2077,7/10/2015,Portland Dance Festival,"Portland, OR",Novice,3,3,-1
+F,Miller,Karen,2077,3/29/2018,San Diego Festival,"San Diego, CA",Novice,9,1,-1
 F,Miller,Pamela,179,7/13/2012,Portland Dance Festival,"Portland, OR",Novice,5,2,-1
 F,Skredsvig,Haley,176,10/16/2014,Paradise Festival,"Ontario, CA",Advanced,1,10,-1
 F,Skredsvig,Haley,176,10/22/2015,Paradise Festival,"Ontario, CA",Advanced,1,5,-1
@@ -5385,3 +5385,41 @@ L,Tadra,Rick,2031,9/27/2025,Dance Fiesta,"Albuquerque, NM",Sophisticated,1,0,2
 F,Sandoval,Lisa,583,9/27/2025,Dance Fiesta,"Albuquerque, NM",Sophisticated,1,0,2
 L,Housego,Cliff,376,9/27/2025,Dance Fiesta,"Albuquerque, NM",Sophisticated,2,0,2
 F,Ringenbach,Shannon,2032,9/27/2025,Dance Fiesta,"Albuquerque, NM",Sophisticated,2,0,2
+L,Bryan,Angie,170,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Novice,1,5,7
+F,Marians,Liza,1805,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Novice,1,10,16
+L,Phoenix,Avery,2078,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Novice,2,4,7
+F,Johnson,Dana,2079,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Novice,2,8,16
+L,Lundahl,Joan,119,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Novice,3,3,7
+F,Colberg,Theresa,1257,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Novice,3,6,16
+L,Muraoka,Shrimpei,2080,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Novice,4,2,7
+F,Newman,Wren,2081,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Novice,4,4,16
+L,Ilg,Mark,1918,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Novice,5,1,7
+F,Saha,Anita,2075,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Novice,5,2,16
+L,Davis,Laura,1314,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Novice,6,0,7
+F,Ohashi,Yukiko,2082,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Novice,6,1,16
+L,Ort,Jeff,1813,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Novice,7,0,7
+F,Haims,Laura,2083,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Novice,7,1,16
+L,Housego,Cliff,376,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Intermediate,1,5,8
+F,Harwin,Lisa Kay,1833,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Intermediate,1,5,5
+L,Kaiser,Justin,1645,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Intermediate,2,4,8
+F,Leon,Heather,1804,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Intermediate,2,4,5
+L,Rinaldi,Rocco,301,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Intermediate,3,3,8
+F,Leon,Heather,1804,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Intermediate,3,0,5
+L,McKay,Scot,723,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Intermediate,4,2,8
+F,Silva,Jenna,1315,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Intermediate,4,2,5
+L,Halladay,Ed,146,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Intermediate,5,1,8
+F,Davis,Laura,1314,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Intermediate,5,1,5
+L,Homan,Dennis,678,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Intermediate,6,0,8
+F,Silva,Jenna,1315,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Intermediate,6,0,5
+L,Cruz,Mark,404,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Intermediate,7,0,8
+F,Davis,Laura,1314,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Intermediate,7,0,5
+L,Kashack,Gene,930,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Intermediate,8,0,8
+F,Yang,Julie,319,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Intermediate,8,0,5
+L,Taylor,Jonathan,968,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Advanced,1,0,4
+F,Halladay,Mindy,274,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Advanced,1,0,4
+L,Mamalakis,John-Mark,969,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Advanced,2,0,4
+F,Bryan,Angie,170,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Advanced,2,0,4
+L,Thompson,Joe,931,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Advanced,3,0,4
+F,Miller,Karen M,350,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Advanced,3,0,4
+L,Lahm,Arthur,117,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Advanced,4,0,4
+F,Lucia,Angeline,454,11/1/2025,Mountain Magic,"Lake Tahoe, NV",Advanced,4,0,4
