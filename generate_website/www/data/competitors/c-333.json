@@ -1,0 +1,21 @@
+{
+  "competitorId": 333,
+  "firstName": "Troy",
+  "lastName": "Myers",
+  "points": {
+    "leader": {
+      "Novice": 1,
+      "Intermediate": 11,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Intermediate",
+  "followerLevel": "Novice"
+}

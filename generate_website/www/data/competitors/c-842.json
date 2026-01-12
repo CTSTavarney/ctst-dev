@@ -1,0 +1,21 @@
+{
+  "competitorId": 842,
+  "firstName": "Brian",
+  "lastName": "Keyes",
+  "points": {
+    "leader": {
+      "Novice": 10,
+      "Intermediate": 5,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Intermediate",
+  "followerLevel": "Novice"
+}

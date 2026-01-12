@@ -1,0 +1,21 @@
+{
+  "competitorId": 1283,
+  "firstName": "Gerald",
+  "lastName": "Cote",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 5,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Intermediate",
+  "followerLevel": "Novice"
+}

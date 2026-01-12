@@ -1,0 +1,21 @@
+{
+  "competitorId": 292,
+  "firstName": "DeAnna",
+  "lastName": "Martin",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 4,
+      "Intermediate": 34,
+      "Advanced": 13,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Advanced"
+}

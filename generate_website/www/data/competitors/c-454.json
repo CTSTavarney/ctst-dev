@@ -1,0 +1,21 @@
+{
+  "competitorId": 454,
+  "firstName": "Angeline",
+  "lastName": "Lucia",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 73,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "All-Star"
+}

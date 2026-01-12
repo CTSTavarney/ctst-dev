@@ -1,0 +1,21 @@
+{
+  "competitorId": 181,
+  "firstName": "Corina",
+  "lastName": "Walker",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 3,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Novice"
+}

@@ -1,0 +1,21 @@
+{
+  "competitorId": 453,
+  "firstName": "Rob",
+  "lastName": "Ingenthron",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 10,
+      "Advanced": 58,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "All-Star",
+  "followerLevel": "Novice"
+}

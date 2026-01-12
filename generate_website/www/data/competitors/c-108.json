@@ -1,0 +1,21 @@
+{
+  "competitorId": 108,
+  "firstName": "Trish",
+  "lastName": "Connery-Walkup",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 25,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Advanced"
+}

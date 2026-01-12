@@ -1,0 +1,21 @@
+{
+  "competitorId": 479,
+  "firstName": "Alayna",
+  "lastName": "Bussen",
+  "points": {
+    "leader": {
+      "Novice": 7,
+      "Intermediate": 5,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 38,
+      "Advanced": 5,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Intermediate",
+  "followerLevel": "Advanced"
+}

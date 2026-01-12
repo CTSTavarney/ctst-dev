@@ -1,0 +1,21 @@
+{
+  "competitorId": 2010,
+  "firstName": "Augie",
+  "lastName": "Leija",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 9,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Intermediate",
+  "followerLevel": "Novice"
+}

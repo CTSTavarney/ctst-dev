@@ -1,0 +1,21 @@
+{
+  "competitorId": 208,
+  "firstName": "David",
+  "lastName": "Searl",
+  "points": {
+    "leader": {
+      "Novice": 2,
+      "Intermediate": 23,
+      "Advanced": 18,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Advanced",
+  "followerLevel": "Novice"
+}

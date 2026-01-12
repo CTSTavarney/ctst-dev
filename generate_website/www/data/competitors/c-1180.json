@@ -1,0 +1,21 @@
+{
+  "competitorId": 1180,
+  "firstName": "Christine",
+  "lastName": "Anderson",
+  "points": {
+    "leader": {
+      "Novice": 4,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 12,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Novice"
+}

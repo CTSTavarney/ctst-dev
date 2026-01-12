@@ -1,0 +1,21 @@
+{
+  "competitorId": 1972,
+  "firstName": "Marnie",
+  "lastName": "Rae",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 2,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Novice"
+}

@@ -1,0 +1,21 @@
+{
+  "competitorId": 583,
+  "firstName": "Lisa",
+  "lastName": "Sandoval",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 24,
+      "Intermediate": 39,
+      "Advanced": 7,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Advanced"
+}

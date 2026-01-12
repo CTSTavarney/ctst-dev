@@ -1,0 +1,21 @@
+{
+  "competitorId": 969,
+  "firstName": "John-Mark",
+  "lastName": "Mamalakis",
+  "points": {
+    "leader": {
+      "Novice": 18,
+      "Intermediate": 33,
+      "Advanced": 1,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Advanced",
+  "followerLevel": "Novice"
+}

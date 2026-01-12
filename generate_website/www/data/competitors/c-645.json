@@ -1,0 +1,21 @@
+{
+  "competitorId": 645,
+  "firstName": "Ryan",
+  "lastName": "Hargrove",
+  "points": {
+    "leader": {
+      "Novice": 15,
+      "Intermediate": 4,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Intermediate",
+  "followerLevel": "Novice"
+}

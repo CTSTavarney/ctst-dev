@@ -1,0 +1,21 @@
+{
+  "competitorId": 600,
+  "firstName": "Sheryl",
+  "lastName": "Horton",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 7,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Intermediate"
+}

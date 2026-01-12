@@ -1,0 +1,21 @@
+{
+  "competitorId": 589,
+  "firstName": "Billy",
+  "lastName": "Snow",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 30,
+      "Advanced": 14,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Advanced",
+  "followerLevel": "Novice"
+}

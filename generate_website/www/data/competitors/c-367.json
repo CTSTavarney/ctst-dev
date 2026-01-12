@@ -1,0 +1,21 @@
+{
+  "competitorId": 367,
+  "firstName": "Ellen",
+  "lastName": "Lewis",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 2,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Intermediate"
+}

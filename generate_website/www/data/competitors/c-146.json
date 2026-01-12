@@ -1,0 +1,21 @@
+{
+  "competitorId": 146,
+  "firstName": "Ed",
+  "lastName": "Halladay",
+  "points": {
+    "leader": {
+      "Novice": 19,
+      "Intermediate": 28,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Intermediate",
+  "followerLevel": "Novice"
+}

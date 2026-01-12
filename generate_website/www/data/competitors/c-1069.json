@@ -1,0 +1,21 @@
+{
+  "competitorId": 1069,
+  "firstName": "Aubrey",
+  "lastName": "Rosso",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 19,
+      "Intermediate": 23,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Intermediate"
+}

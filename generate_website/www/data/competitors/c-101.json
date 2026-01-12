@@ -1,0 +1,21 @@
+{
+  "competitorId": 101,
+  "firstName": "Jack",
+  "lastName": "Berard",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 3,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Advanced",
+  "followerLevel": "Novice"
+}

@@ -1,0 +1,21 @@
+{
+  "competitorId": 492,
+  "firstName": "Rebecca",
+  "lastName": "Linger",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 7,
+      "Intermediate": 10,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Intermediate"
+}

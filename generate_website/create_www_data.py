@@ -1,6 +1,70 @@
 import pandas as pd
 import numpy as np
+#################I added on 1/11/26
+import json 
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+#################
+
 from pathlib import Path
+
+########################I added this one 1/11/26
+def get_points_col(df: pd.DataFrame) -> str:
+    """Return the column name that contains points."""
+    if "Points" in df.columns:
+        return "Points"
+    # common merge suffixes
+    for c in ("Points_x", "Points_y"):
+        if c in df.columns:
+            return c
+    # if you've already renamed inside the loop
+    if "Pts" in df.columns:
+        return "Pts"
+    raise KeyError(f"No points column found. Available columns: {df.columns.tolist()}")
+########################
+
+
+#############################I added this on 1/11/26
+DIVISION_TO_LEVEL = {
+    40: "Novice",
+    50: "Intermediate",
+    60: "Advanced",
+    70: "All-Star"
+}
+
+def compute_role_level(role_points: dict) -> str:
+    """
+    role_points keys: "Novice", "Intermediate", "Advanced", "All-Star"
+    Uses your existing threshold logic, but per role.
+    """
+    novice = role_points.get("Novice", 0)
+    intermediate = role_points.get("Intermediate", 0)
+    advanced = role_points.get("Advanced", 0)
+    allstar = role_points.get("All-Star", 0)
+
+    if allstar > 0 or advanced >= 45:
+        return "All-Star"
+    elif advanced > 0 or intermediate >= 30:
+        return "Advanced"
+    elif intermediate > 0 or novice >= 15:
+        return "Intermediate"
+    else:
+        return "Novice"
+
+def empty_role_points() -> dict:
+    return {"Novice": 0, "Intermediate": 0, "Advanced": 0, "All-Star": 0}
+
+#############################
+
+
+
+
+
+
+
+
+
+
 
 parentDirectory         = Path(__file__).parent
 projectDirectory        = parentDirectory.parent
@@ -96,6 +160,61 @@ for competitorID, dfC in gb:
         levelName = 'Novice'
         level = 40
 
+    ############################I added this on 1/11/26
+    # --------------------------
+    # Build 8-bucket point data
+    # --------------------------
+    points_obj = {
+        "leader": empty_role_points(),
+        "follower": empty_role_points()
+    }
+
+    # Only divisions that matter for your enum buckets (40/50/60/70)
+
+    ##############I added these on 1/11/26
+    points_col = get_points_col(dfC)
+    dfPts = dfC[(dfC[points_col] >0) & (dfC["Division ID"].isin(DIVISION_TO_LEVEL.keys()))]
+    ###############################
+
+    #dfPts = dfC[(dfC["Points"] > 0) & (dfC["Division ID"].isin(DIVISION_TO_LEVEL.keys()))] original
+
+    # Sum points by role + division
+    # Role ID: 1=Leader, 2=Follower (per your roleIdToName)
+    ##grouped = dfPts.groupby(["Role ID", "Division ID"])["Points"].sum() I commented this out on 1/11/26
+
+    grouped = dfPts.groupby(["Role ID", "Division ID"])[points_col].sum() #suggested by GPT
+
+    for (role_id, division_id), pts in grouped.items():
+        level_key = DIVISION_TO_LEVEL[int(division_id)]
+
+        if int(role_id) == 1:
+            points_obj["leader"][level_key] = int(pts)
+        elif int(role_id) == 2:
+            points_obj["follower"][level_key] = int(pts)
+
+    leader_level = compute_role_level(points_obj["leader"])
+    follower_level = compute_role_level(points_obj["follower"])
+
+    competitorName = dfCompetitors.at[competitorID,'FirstLastName']
+
+    competitor_json = {
+        "competitorId": int(competitorID),
+        "firstName": competitorName.split(" ")[0] if " " in competitorName else competitorName,
+        "lastName": competitorName.split(" ", 1)[1] if " " in competitorName else "",
+        "points": points_obj,
+        "leaderLevel": leader_level,
+        "followerLevel": follower_level
+    }
+
+    # Write JSON file alongside competitor HTML files
+    with open(competitorsDirectory / f'c-{competitorID}.json', 'w', encoding='utf-8') as f:
+        json.dump(competitor_json, f, indent=2)
+    ############################end
+
+
+
+
+
     # Include the level name and number in each row of the Competitor's table
     dfCompetitors.at[competitorID, 'Level'] = level
     dfCompetitors.at[competitorID, 'Level Name'] = levelName
@@ -130,6 +249,76 @@ htmlTemplate = '''<!DOCTYPE html>
 </body>
 </html>
 '''
+######################I added this on 1/11/26
+def save_points_accumulation_chart_leader_follower(dfC: pd.DataFrame, competitorID, out_dir: Path) -> str | None:
+    """
+    Saves a PNG chart for cumulative points over time with separate lines:
+      - Role ID 1: Leader
+      - Role ID 2: Follower
+    Returns the filename (not full path) or None if there are no points to plot.
+    """
+    points_col = get_points_col(dfC)
+
+    # Need these columns
+    needed = {"Event Date", "Role ID", points_col}
+    if not needed.issubset(set(dfC.columns)):
+        return None
+
+    dfT = dfC[["Event Date", "Role ID", points_col]].copy()
+    dfT = dfT.dropna(subset=["Event Date", "Role ID"])
+    dfT[points_col] = pd.to_numeric(dfT[points_col], errors="coerce").fillna(0)
+
+    # Keep only Leader/Follower roles
+    dfT = dfT[dfT["Role ID"].isin([1, 2])]
+
+    # (Optional) Only plot positive points earned
+    dfT = dfT[dfT[points_col] > 0]
+
+    if dfT.empty:
+        return None
+
+    # Sum points per date per role
+    dfDaily = (
+        dfT.groupby(["Event Date", "Role ID"], as_index=False)[points_col]
+           .sum()
+           .sort_values("Event Date")
+    )
+
+    # Create a complete date index so both lines step through the same x-values
+    all_dates = pd.DataFrame({"Event Date": sorted(dfDaily["Event Date"].unique())})
+
+    def role_series(role_id: int) -> pd.DataFrame:
+        dfR = dfDaily[dfDaily["Role ID"] == role_id][["Event Date", points_col]].copy()
+        dfR = pd.merge(all_dates, dfR, on="Event Date", how="left").fillna({points_col: 0})
+        dfR["Cumulative"] = dfR[points_col].cumsum()
+        return dfR
+
+    leader = role_series(1)
+    follower = role_series(2)
+
+    # Plot
+    fig, ax = plt.subplots(figsize=(7.5, 3.2))
+    ax.plot(leader["Event Date"], leader["Cumulative"], marker="o", label="Leader")
+    ax.plot(follower["Event Date"], follower["Cumulative"], marker="o", label="Follower")
+
+    ax.set_title("Points Accumulation Over Time")
+    ax.set_xlabel("Time")
+    ax.set_ylabel("Points (cumulative)")
+
+    ax.xaxis.set_major_locator(mdates.AutoDateLocator())
+    ax.xaxis.set_major_formatter(mdates.ConciseDateFormatter(ax.xaxis.get_major_locator()))
+
+    ax.grid(True)
+    ax.legend()
+
+    filename = f"c-{int(competitorID)}-points-lf.png"
+    out_path = out_dir / filename
+    fig.tight_layout()
+    fig.savefig(out_path, dpi=150)
+    plt.close(fig)
+
+    return filename
+######################
 
 #######################
 # Generate Index Files
@@ -203,18 +392,134 @@ def generateCompetitorFiles():
     # Generate details pages for each individual competitor
     # ------------------------------------------------------
 
+    ########################I added this on 1/11/26
+    LEVEL_ORDER = ["Novice", "Intermediate", "Advanced", "All-Star"]
+    ########################
+
     gb = df.groupby('Competitor ID')
 
     for competitorID, dfC in gb:
         # dfC is a DataFrame holding all result records for a given Competitor ID
 
+        ######################I commented this on 1/11/26
         #
         # Get the competitor's points by division, omitting divisions with no points
         # Can modify with more data
         #
-        dfP = dfC[dfC['Points'] > 0]
-        pointsByDivision = dfP.groupby(['Division ID', 'Division'], as_index=False)['Points'].sum()[['Division', 'Points']]
-        content = '<div>' + pointsByDivision.to_html(border=0, classes='tableNoBorder', justify='left', index=False) + '</div>'
+        #dfP = dfC[dfC['Points'] > 0]
+        #pointsByDivision = dfP.groupby(['Division ID', 'Division'], as_index=False)['Points'].sum()[['Division', 'Points']]
+        #content = '<div>' + pointsByDivision.to_html(border=0, classes='tableNoBorder', justify='left', index=False) + '</div>'
+        content = ''
+        #######################
+
+
+        ###################I added this on 1/11/26
+        # -------------------------------------------------------
+        # Leader/Follower skill + point breakdown tables (NEW)
+        # -------------------------------------------------------
+        # --- Build role/division buckets (Leader/Follower x 4 skill levels) ---
+        points_col = get_points_col(dfC)  # returns Points / Points_x / Points_y / Pts
+
+        points_obj = {
+            "leader": empty_role_points(),
+            "follower": empty_role_points()
+        }
+
+        # Only keep divisions that map to skill buckets and positive points
+        dfPts = dfC[(dfC[points_col] > 0) & (dfC["Division ID"].isin(DIVISION_TO_LEVEL.keys()))]
+
+        # Sum points by role + division
+        grouped = dfPts.groupby(["Role ID", "Division ID"])[points_col].sum()
+
+        for (role_id, division_id), pts in grouped.items():
+            level_key = DIVISION_TO_LEVEL[int(division_id)]  # "Novice"/"Intermediate"/"Advanced"/"All-Star"
+            if int(role_id) == 1:
+                points_obj["leader"][level_key] = int(pts)
+            elif int(role_id) == 2:
+                points_obj["follower"][level_key] = int(pts)
+
+        leader_level = compute_role_level(points_obj["leader"])
+        follower_level = compute_role_level(points_obj["follower"])
+
+
+        # Pretty label for All-Star for HTML (optional)
+        def html_level_label(level: str) -> str:
+            return "All&#8209;Star" if level == "All-Star" else level  # non-breaking hyphen
+
+        # Leader table
+        dfLeaderPts = pd.DataFrame({
+            "Skill Level": [html_level_label(lv) for lv in LEVEL_ORDER],
+            "Points": [int(points_obj["leader"].get(lv, 0)) for lv in LEVEL_ORDER]
+        })
+
+        # Follower table
+        dfFollowerPts = pd.DataFrame({
+            "Skill Level": [html_level_label(lv) for lv in LEVEL_ORDER],
+            "Points": [int(points_obj["follower"].get(lv, 0)) for lv in LEVEL_ORDER]
+        })
+
+        # Build HTML sections
+        leader_header = f"<h3>Leader &mdash; {html_level_label(leader_level)}</h3>"
+        follower_header = f"<h3>Follower &mdash; {html_level_label(follower_level)}</h3>"
+
+        leader_table_html = dfLeaderPts.to_html(
+            border=0,
+            classes="tableNoBorder",
+            justify="left",
+            index=False,
+            escape=False
+        )
+
+        follower_table_html = dfFollowerPts.to_html(
+            border=0,
+            classes="tableNoBorder",
+            justify="left",
+            index=False,
+            escape=False
+        )
+
+        tables_block = (
+        #content = (
+            '<div style="display:flex; gap:2em; align-items:flex-start;">'
+
+                '<div style="flex:1; text-align:center;">'
+                    + leader_header +
+                    '<div style="display:inline-block; text-align:left;">'
+                        + leader_table_html +
+                    '</div>'
+                '</div>'
+
+                '<div style="flex:1; text-align:center;">'
+                    + follower_header +
+                    '<div style="display:inline-block; text-align:left;">'
+                        + follower_table_html +
+                    '</div>'
+                '</div>'
+
+            '</div>'
+            #+ content
+        )
+
+        ###################
+
+        ###################I added this on 1/11/26
+        # Create and embed cumulative points chart
+        chart_file = save_points_accumulation_chart_leader_follower(dfC, competitorID, competitorsDirectory)
+        
+        chart_block=""
+        if chart_file is not None:
+            chart_block = (
+            #content = (
+                '<div style="margin: 1em 0;">'
+                f'<img src="{chart_file}" alt="Leader vs Follower points accumulation chart" '
+                'style="width:100%; max-width:900px;">'
+                '</div>'
+                #+ content
+            )
+        
+        content = "<div>" + tables_block + chart_block +"</div>" + content
+        ###################
+
 
         #
         # Get the chronological list of this competitor's contest results
@@ -569,6 +874,30 @@ def generateRankingsFiles():
         # Write an html file for each year
         with open(pointsDirectory / f'p-{year}.html', 'w') as f:
             f.write(html)
+
+##########################I added this on 1/11/26
+# -------------------------
+# DIAGNOSTIC: missing JSON?
+# -------------------------
+import re
+
+# Competitor IDs that appear in results (i.e., "has results")
+ids_with_results = set(dfResults.index.map(int)) if dfResults.index.name == "Result ID" else set(dfResults["Competitor ID"].dropna().astype(int).unique())
+
+# JSON files that exist
+json_ids = set()
+for p in competitorsDirectory.glob("c-*.json"):
+    m = re.match(r"c-(\d+)\.json$", p.name)
+    if m:
+        json_ids.add(int(m.group(1)))
+
+missing = sorted(ids_with_results - json_ids)
+
+print("Competitors with results:", len(ids_with_results))
+print("Competitor JSON files found:", len(json_ids))
+print("Missing JSON for these Competitor IDs:", missing[:50], ("..." if len(missing) > 50 else ""))
+
+##########################
 
 generateCompetitorFiles()
 generateEventFiles()

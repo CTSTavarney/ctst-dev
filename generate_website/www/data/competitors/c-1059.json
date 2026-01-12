@@ -1,0 +1,21 @@
+{
+  "competitorId": 1059,
+  "firstName": "Tony",
+  "lastName": "New",
+  "points": {
+    "leader": {
+      "Novice": 6,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Novice"
+}

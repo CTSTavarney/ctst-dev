@@ -1,0 +1,21 @@
+{
+  "competitorId": 112,
+  "firstName": "Craig",
+  "lastName": "Johnson",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 5,
+      "Advanced": 146,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "All-Star",
+  "followerLevel": "Novice"
+}

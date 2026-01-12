@@ -1,0 +1,21 @@
+{
+  "competitorId": 738,
+  "firstName": "Tanya",
+  "lastName": "Wells-Cranshaw",
+  "points": {
+    "leader": {
+      "Novice": 12,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 17,
+      "Intermediate": 18,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Intermediate"
+}

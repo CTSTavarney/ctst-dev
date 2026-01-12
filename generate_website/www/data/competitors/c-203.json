@@ -1,0 +1,21 @@
+{
+  "competitorId": 203,
+  "firstName": "Robert",
+  "lastName": "Beckler",
+  "points": {
+    "leader": {
+      "Novice": 23,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Intermediate",
+  "followerLevel": "Novice"
+}

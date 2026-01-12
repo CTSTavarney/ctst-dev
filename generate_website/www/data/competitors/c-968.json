@@ -1,0 +1,21 @@
+{
+  "competitorId": 968,
+  "firstName": "Jonathan",
+  "lastName": "Taylor",
+  "points": {
+    "leader": {
+      "Novice": 9,
+      "Intermediate": 48,
+      "Advanced": 20,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Advanced",
+  "followerLevel": "Novice"
+}

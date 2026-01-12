@@ -1,0 +1,21 @@
+{
+  "competitorId": 172,
+  "firstName": "Timothy",
+  "lastName": "Bauer",
+  "points": {
+    "leader": {
+      "Novice": 8,
+      "Intermediate": 40,
+      "Advanced": 28,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Advanced",
+  "followerLevel": "Novice"
+}

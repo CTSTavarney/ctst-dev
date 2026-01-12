@@ -1,0 +1,21 @@
+{
+  "competitorId": 176,
+  "firstName": "Haley",
+  "lastName": "Skredsvig",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 14,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 16,
+      "Intermediate": 38,
+      "Advanced": 85,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Intermediate",
+  "followerLevel": "All-Star"
+}

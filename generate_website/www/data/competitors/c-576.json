@@ -1,0 +1,21 @@
+{
+  "competitorId": 576,
+  "firstName": "Jamie",
+  "lastName": "Hoyt",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 3,
+      "Advanced": 14,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Advanced"
+}

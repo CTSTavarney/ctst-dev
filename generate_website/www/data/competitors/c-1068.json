@@ -1,0 +1,21 @@
+{
+  "competitorId": 1068,
+  "firstName": "Camie",
+  "lastName": "Webb",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 17,
+      "Intermediate": 32,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Advanced"
+}

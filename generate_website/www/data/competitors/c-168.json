@@ -1,0 +1,21 @@
+{
+  "competitorId": 168,
+  "firstName": "Sue",
+  "lastName": "Cravalho",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 2,
+      "Advanced": 39,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Advanced"
+}

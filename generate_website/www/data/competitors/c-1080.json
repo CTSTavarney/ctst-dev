@@ -1,0 +1,21 @@
+{
+  "competitorId": 1080,
+  "firstName": "Vanessa",
+  "lastName": "Vitiello",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 18,
+      "Intermediate": 4,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Intermediate"
+}

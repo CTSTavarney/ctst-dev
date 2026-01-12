@@ -1,0 +1,21 @@
+{
+  "competitorId": 206,
+  "firstName": "Shanna",
+  "lastName": "Porcari",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 1,
+      "Intermediate": 13,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Intermediate"
+}

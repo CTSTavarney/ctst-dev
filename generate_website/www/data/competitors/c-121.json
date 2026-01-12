@@ -1,0 +1,21 @@
+{
+  "competitorId": 121,
+  "firstName": "Donny",
+  "lastName": "Nearhoff",
+  "points": {
+    "leader": {
+      "Novice": 6,
+      "Intermediate": 17,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Intermediate",
+  "followerLevel": "Novice"
+}

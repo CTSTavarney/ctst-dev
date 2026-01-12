@@ -1,0 +1,21 @@
+{
+  "competitorId": 887,
+  "firstName": "Russ",
+  "lastName": "Bradchulis",
+  "points": {
+    "leader": {
+      "Novice": 18,
+      "Intermediate": 42,
+      "Advanced": 12,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Advanced",
+  "followerLevel": "Novice"
+}

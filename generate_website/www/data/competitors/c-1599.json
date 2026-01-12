@@ -1,0 +1,21 @@
+{
+  "competitorId": 1599,
+  "firstName": "Jonno",
+  "lastName": "Liberman",
+  "points": {
+    "leader": {
+      "Novice": 15,
+      "Intermediate": 8,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 12,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Intermediate",
+  "followerLevel": "Novice"
+}

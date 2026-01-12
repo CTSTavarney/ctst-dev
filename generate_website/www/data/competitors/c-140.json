@@ -1,0 +1,21 @@
+{
+  "competitorId": 140,
+  "firstName": "Michael",
+  "lastName": "DeLanoy",
+  "points": {
+    "leader": {
+      "Novice": 5,
+      "Intermediate": 34,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Advanced",
+  "followerLevel": "Novice"
+}

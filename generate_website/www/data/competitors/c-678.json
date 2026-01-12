@@ -1,0 +1,21 @@
+{
+  "competitorId": 678,
+  "firstName": "Dennis",
+  "lastName": "Homan",
+  "points": {
+    "leader": {
+      "Novice": 17,
+      "Intermediate": 19,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Intermediate",
+  "followerLevel": "Novice"
+}

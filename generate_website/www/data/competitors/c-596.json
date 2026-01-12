@@ -1,0 +1,21 @@
+{
+  "competitorId": 596,
+  "firstName": "Tasha",
+  "lastName": "Sumpter",
+  "points": {
+    "leader": {
+      "Novice": 4,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 18,
+      "Intermediate": 7,
+      "Advanced": 37,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Advanced"
+}

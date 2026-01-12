@@ -1,0 +1,21 @@
+{
+  "competitorId": 297,
+  "firstName": "Tom",
+  "lastName": "O'Leary",
+  "points": {
+    "leader": {
+      "Novice": 1,
+      "Intermediate": 12,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Intermediate",
+  "followerLevel": "Novice"
+}

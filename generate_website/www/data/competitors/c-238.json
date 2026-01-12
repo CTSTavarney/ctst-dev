@@ -1,0 +1,21 @@
+{
+  "competitorId": 238,
+  "firstName": "Mike",
+  "lastName": "Eads",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 69,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "All-Star",
+  "followerLevel": "Novice"
+}

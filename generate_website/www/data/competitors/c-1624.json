@@ -1,0 +1,21 @@
+{
+  "competitorId": 1624,
+  "firstName": "Jared",
+  "lastName": "Cogswell",
+  "points": {
+    "leader": {
+      "Novice": 10,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Novice"
+}

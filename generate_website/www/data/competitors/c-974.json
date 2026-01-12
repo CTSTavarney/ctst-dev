@@ -1,0 +1,21 @@
+{
+  "competitorId": 974,
+  "firstName": "Rachelle",
+  "lastName": "Irby",
+  "points": {
+    "leader": {
+      "Novice": 0,
+      "Intermediate": 0,
+      "Advanced": 0,
+      "All-Star": 0
+    },
+    "follower": {
+      "Novice": 11,
+      "Intermediate": 33,
+      "Advanced": 4,
+      "All-Star": 0
+    }
+  },
+  "leaderLevel": "Novice",
+  "followerLevel": "Advanced"
+}
